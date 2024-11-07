@@ -1,0 +1,96 @@
+body{
+    background-image: url(img/fondo01.jpg);
+}
+.crono{
+    background-image: url(img/fondoReloj.jpg);
+    padding: 7px;
+}
+.labelito{
+    background-image: url(img/fondoLabel1.jpg);
+    padding-top: 5px;
+    padding-bottom: 9px;
+}
+
+.reloj{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.label{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.aleatorio, .aleatorio1{
+    font-weight:bold;
+    font-size: 23pt;
+    color: black;
+    padding-top:5px;
+    font-family:'Open Sans', sans-serif;
+}
+
+input[name='ventana1']{
+    border: 1px solid rgb(13, 134, 145);
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px ;
+    border-radius: 8px 8px 8px 8px;
+    -moz-box-shadow: 5px 5px 5px rgba(13, 134, 145,0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(13, 134, 145,0.5);
+    box-shadow: 5px 5px 5px rgba(13, 134, 145,0.5);
+    height: 50px;
+}
+
+input[name='resp']{
+    border:1px solid #896E29;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    background: -moz-linear-gradient(top, #F4D487, #f2bf3d); 
+	background: -webkit-linear-gradient(top,#F4D487, #f2bf3d); 
+    box-shadow: 4px 4px 5px rgba(186, 121, 0,0.5);
+    margin-right: 15px;
+    font-size: 1.2em;
+    color:black;
+}
+
+input[name='resp']:hover{
+    border:1px solid #896E29;
+    background: -moz-linear-gradient(top, #ebcc82, #e3b339); 
+    background: -webkit-linear-gradient(top,#ebcc82, #e3b339);
+}
+
+input[name='continuar']{
+    border:1px solid #29893f;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 5px rgba(22, 186, 0, 0.5);
+    background: -moz-linear-gradient(top, #6aae7a, #29893f); 
+    background: -webkit-linear-gradient(top,#6aae7a, #29893f);
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+input[name='continuar']:hover{
+    border:1px solid #1b8634;
+    background: -moz-linear-gradient(top, #4e945e, #136d28); 
+    background: -webkit-linear-gradient(top,#4e945e, #136d28);
+}
+
+input[name='parar']{
+    border:1px solid #892929;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    background: -moz-linear-gradient(top, #c05656, #892929); 
+    background: -webkit-linear-gradient(top,#c05656, #892929);
+    box-shadow: 4px 4px 5px rgba(186, 0, 0, 0.5);
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+input[name='parar']:hover{
+    border:1px solid #891c1c;
+    background: -moz-linear-gradient(top, #bc4848, #921e1e); 
+    background: -webkit-linear-gradient(top,#bc4848, #921e1e);
+}

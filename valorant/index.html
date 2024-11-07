@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Valorant</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="./img/icono.ico"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- CREAMOS EL CONTENIDO CON DOS PÁRRAFOS -->
+            <div class="col-8 mt-2">
+                <div class="row justify-content-between inicio">
+                    <div class="col-5 ms-5 mt-3 text-center label">
+                        <p class="text-white labelito">¿Cuánto sabes de Valorant?</p>
+                    </div>
+                    <div class="col-3 me-5 mt-3 reloj text-center">
+                        <p id="time" class="text-white crono"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- CREAMOS LA PARTE PRINCIPAL DONDE VAN LA IMAGEN Y LA PREGUNTA -->
+            <div class="col-8">
+                <p id="pregunta" class="text-center aleatorio mt-2"></p>
+                <div class="row me-3">
+                    <img id="im" class="col-6 mt-2 mx-auto img-fluid" src="" style="width: 70%">
+                </div>
+            </div>
+
+            <!-- CREAMOS EL LABEL DONDE SE INTRODUCIRÁ LA RESPUESTA CON SU RESPECTIVO BOTÓN -->
+            <div class="col-8">
+                <div class="row justify-content-center">
+                    <div class="col-9 me-3 mt-3">
+                        <form action="" method="POST">
+                            <div class="justify-content-center mb-3 mt-2 row">
+                                <input type="text" name="ventana1" id="ventana1" value="" class="col-form-label col-6 mt-2" placeholder="Introduce tu respuesta" required>
+                                <input name="resp" value="RESPONDER" type="button" class="btn btn-warning col-3 text-white mt-2 mb-2 offset-1" onclick="comprobarRespuesta()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- FORZAMOS UN SALTO DE LÍNEA -->
+            <div class="w-100"></div>
+
+            <!-- CREAMOS LOS DOS BOTONES DE CONTINUAR Y PARAR -->
+            <div class="col-8">
+                <div class="row justify-content-center me-3">
+                    <input type="button" onclick="continuarImagen()" value="CONTINUAR" class="btn btn-success col-3 mt-2 mb-2 me-3" name="continuar">
+                    <input type="button" onclick="pararImagen()" value="PARAR" class="btn btn-danger col-3 mt-2 mb-2 me-3" name="parar">
+                </div>
+            </div>
+            <div class="col-8">
+                <p id="pregunta1" class="text-center aleatorio1 mt-3"></p>
+            </div>
+        </div>
+    </div> 
+</body>
+<!-- SCRIPT DONDE HACEMOS USO DE DICHAS CLASES -->
+<script src="Imagenes.js"></script>
+</html>

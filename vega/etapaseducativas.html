@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etapas Educativas</title>
+        <link href="estilo.css"  rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="shortcut icon" href="./img/grifo.ico"/>
+        <link href="estilos.css"  rel="stylesheet" type="text/css">
+        <style>
+            .video{
+                padding-top: 5px;
+                background-color: #cdc9c9;
+                border: 0px;
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <!-- MENU DE NAVEGACION -->
+        <div class="container-fluid d-none d-sm-block">
+            <div class="row justify-content-between bg-secondary pt-1 pb-1">
+                <div class="col d-none d-sm-block">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link text-light"><small>Erasmus +</small></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light"><small>Trinity</small></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light"><small>Extraescolares</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-auto d-none d-sm-block">
+                    <a class="btn btn-outline-light" role="button" href="#modalRegistro" data-bs-toggle="modal" data-bs-target="#modalRegistro">Mi Cuenta</a>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana Modal -->
+        <div class="modal fade" id="modalRegistro">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- MODAL BODY -->
+                    <div class="modal-body mx-auto">
+                        <div class="bg-white p-4 rounded-5 text-secondary shadow mb-2">
+                            <form action="">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/login1.png" alt="Iniciar Sesión" style="height: 7em">
+                                </div>
+                                <div class="text-center fs-1 fw-bold">Iniciar Sesión</div>
+                                <div class="input-group mt-4">
+                                    <div class="input-group-text bg-success">
+                                        <img src="img/login.png" alt="username-icon" style="height: 1em">
+                                    </div>
+                                    <input class="form-control bg-light" type="email" placeholder="Correo" required>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <div class="input-group-text bg-success">
+                                        <img src="img/contrasena.png" alt="password-icon" style="height: 1em">
+                                    </div>
+                                    <input class="form-control bg-light" type="password" placeholder="Contraseña" required>
+                                </div>
+                                <div class="d-flex justify-content-around mt-1">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <input class="form-check-input" type="checkbox">
+                                        <div class="pt-1" style="font-size: 0.7em">Recordar Contraseña</div>
+                                    </div>
+                                    <div class="pt-1">
+                                        <a href="#" class="text-decoration-none text-info fw-semibold fst-italic" style="font-size: 0.7em">¿Olvidaste la contraseña?</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="btn btn-success text-white w-100 mt-4 fw-semibold shadow-sm" type="submit">
+                                    Iniciar Sesión
+                                </div>
+                                <div class="d-flex gap-1 justify-content-center mt-2">
+                                    <div class="me-3">¿No tienes cuenta?</div>
+                                    <a href="#" class="text-decoration-none text-info fw-semibold">Regístrate</a>
+                                </div>
+                                <div class="p-3">
+                                    <div class="border-bottom text-center" style="height: 0.9em">
+                                        <span class="bg-white px-3">o</span>
+                                    </div>
+                                </div>
+                                <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+                                    <img src="img/google.jpg" alt="Google" style="height: 1.6em">
+                                    <div class="fw-semibold text-secondary">Continuar con Google</div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BARRA NAVEGACION ARRIBA -->
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav barra">
+                    <li class="nav-item me-auto ms-2 d-none d-md-block"><a class="nav-link" href="#"><img src="./img/prueba.jpg" alt="Vega Media" style="width:140px" class="rounded-2"></a></li>
+                    <li class="nav-item d-block d-md-none mx-auto"><a class="nav-link" href="#"><img src="./img/prueba.jpg" alt="Vega Media" style="width:300px" class="rounded-2"></a></li>
+                    <li class="nav-item text-center pt-4 text-white d-none d-md-block titul">
+                        <h1 class="titulo">C.E.S. Vega Media</h1>
+                        <p>Centro de Enseñanza Concertada</p>
+                    </li>
+                    <div class="w-100 d-block d-md-none"></div>
+                    <li class="nav-item ms-auto pt-4 d-none d-md-block redes">
+                        <a href="https://www.instagram.com/cesvegamedia/" target="_blank" class="nav-link"><i class="bi bi-instagram pe-1 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 d-none d-md-block redes">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank" class="nav-link"><i class="bi bi-facebook pe-1 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 me-2 d-none d-md-block redes">
+                        <a href="https://twitter.com/cesvegamedia" target="_blank" class="nav-link"><i class="bi bi-twitter pe-1 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 me-2 d-none d-md-block redes">
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank" class="nav-link"><i class="bi bi-youtube pe-1 text-white"></i></a>
+                    </li>
+
+                    <li class="nav-item ms-auto pt-4 mx-auto d-block d-md-none mb-3 redes">
+                        <a href="https://www.instagram.com/cesvegamedia/" target="_blank" class="nav-link"><i class="bi bi-instagram pe-3 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 mx-auto d-block d-md-none mb-3 redes">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank" class="nav-link"><i class="bi bi-facebook pe-3 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 me-2 mx-auto d-block d-md-none mb-3 redes">
+                        <a href="https://twitter.com/cesvegamedia" target="_blank" class="nav-link"><i class="bi bi-twitter pe-3 text-white"></i></a>
+                    </li>
+                    <li class="nav-item pt-4 me-2 mx-auto d-block d-md-none mb-3 redes">
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank" class="nav-link"><i class="bi bi-youtube pe-3 text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+                <!-- <a class="navbar-brand col-auto" href="#"> -->
+        </div>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+            <div class="container-fluid justify-content-end">
+                <!-- BOTON TOGGLER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- ENLACES -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                    <ul class="navbar-nav menuNav">
+                        <li class="navbar-item pe-3">
+                            <a href="index.html" class="nav-link"><i class="bi bi-house "></i> Inicio</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="etapaseducativas.html"><i class="bi bi-mortarboard"></i> Etapas Educativas</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="instalaciones.html" class="nav-link"><i class="bi bi-card-image"></i> Instalaciones</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="servicios.html" class="nav-link"><i class="bi bi-briefcase-fill"></i> Servicios</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="contacto.html" class="nav-link"><i class="bi bi-telephone-fill"></i> Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-block d-sm-none mb-2">
+                        <li class="navbar-item"><a href="#" class="nav-link text-light"><small>Erasmus +</small></a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-light"><small>Trinity</small></a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-light"><small>Extraescolares</small></a></li>
+                    </ul>
+                    <div class="col-auto d-block d-sm-none mb-2">
+                        <a class="btn btn-outline-light" role="button" href="#modalRegistro" data-bs-toggle="modal" data-bs-target="#modalRegistro">Mi Cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CUERPO DE LA PAGINA -->
+    <section class="container">
+        <div class="col-11 mx-auto">
+            <h1 class="text-center mb-4 servi mt-4">Etapas Educativas</h1>
+        </div>
+        <div class="accordion" id="EjemploAcordeon">
+            <!-- ITEM 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO">
+                    Educación Infantil
+                </button>
+            </div>
+            <div id="plegableUNO" class="accordion-collapse collapse show" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        Esta etapa está dedicada al fomento y el desarrollo integral de personalidad individual de cada uno de
+                        nuestros alumnos mediante la promoción de las habilidades sociales, emocionales, cognitivas y motrices
+                        básicas.
+                    </p>
+                    <p>
+                        Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que
+                        marca la dinámica según sus necesidades, intereses y capacidades.
+                    </p>
+                    <!-- <img src="img/infantil.jpg" class="img-fluid"> -->
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img7.jpg">
+                                <a href="#modal7" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal7"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/infantil.jpg">
+                                <a href="#modal25" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal25"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img3.jpg">
+                                <a href="#modal3" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    
+            <!-- ITEM 2 -->
+            <div class="accordion-item">
+                <button class="accordion-button collapsed botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableDOS">
+                    Educación Primaria
+                </button>
+            </div>
+            <div id="plegableDOS" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        Esta etapa está dedicada al desarrollo del interés por aprender y al fomento de la cultura general. Los
+                        alumnos alcanzarán su capacidad deductiva, inductiva y lógica a través de la propia experimentación. La
+                        evaluación del alumnado se realiza de manera continua valorando así en mayor medida el esfuerzo diario en
+                        lugar del resultado de una prueba única.
+                    </p>
+                    <p>
+                        Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que
+                        marca la dinámica según sus necesidades, intereses y capacidades. Formación básica e integral de calidad con
+                        proyectos únicos de 6 a 12 años.
+                    </p>
+                    <!-- <img src="img/infantil.jpg" class="img-fluid"> -->
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/primaria.jpg">
+                                <a href="#modal26" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal26"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img9.jpg">
+                                <a href="#modal9" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal9"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img24.jpg">
+                                <a href="#modal24" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal24"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ITEM 3 -->
+            <div class="accordion-item">
+                <button class="accordion-button collapsed botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableTRES">
+                    Educación Secundaria Obligatoria
+                </button>
+            </div>
+            <div id="plegableTRES" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        La educación secundaria es básica y obligatoria. Comprende cuatro cursos académicos. La finalidad de la
+                        educación secundaria obligatoria es proporcionar a todos los chicos y chicas una educación que les permita
+                        asegurar un desarrollo personal sólido, adquirir las habilidades y las competencias culturales y sociales
+                        relativas a la expresión y comprensión oral, a la escritura, al cálculo, a la resolución de problemas de la vida
+                        cotidiana, al rechazo de todo tipo de comportamientos discriminatorios por razón de sexo, a la igualdad de
+                        derechos y oportunidades entre mujeres y hombres, a la autonomía personal, a la corresponsabilidad y la
+                        interdependencia personal y a la comprensión de los elementos básicos del mundo en los aspectos científico,
+                        social y cultural.
+                    </p>
+                    <!-- <img src="img/infantil.jpg" class="img-fluid"> -->
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img20.jpg">
+                                <a href="#modal20" class="card-link stretched-link" data-bs-toggle="modal" data-bs-target="#modal20"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img21.jpg">
+                                <a href="#modal21" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal21"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img11.jpg">
+                                <a href="#modal11" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal11"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ITEM 4 -->
+            <div class="accordion-item">
+                <button class="accordion-button collapsed botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableCUATRO">
+                    Formación Profesional Básica
+                </button>
+            </div>
+            <div id="plegableCUATRO" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        Este ciclo, cofinanciado por la Unión Europea, tiene como objetivos la reducción del abandono escolar
+                        temprano, el aprendizaje permanente y convalidación de las competencias adquiridas y el refuerzo de los
+                        vínculos con el mercado laboral y calidad de la formación profesional.
+                    </p>
+                    <!-- <img src="img/infantil.jpg" class="img-fluid"> -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2">
+                        <div class="col mx-auto">
+                            <!-- TARJETA 1 -->
+                            <div class="card h-70 mt-2 mb-2">
+                                <img class="card-img-center img-fluid contenido" src="img/img14.jpg">
+                                <a href="#modal14" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal14"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 5 -->
+            <div class="accordion-item">
+                <button class="accordion-button collapsed botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableCINCO">
+                    Ciclos Formativos de Grado Medio
+                </button>
+            </div>
+            <div id="plegableCINCO" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        Dentro del Grado Medio encontramos 3 cursos distintos como:
+                    </p>
+                    <div class="accordion" id="EjemploAcordeon1">
+                        <!-- ITEM 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO1">
+                                Instalaciones Eléctricas y Automáticas
+                            </button>
+                        </div>
+                        <div id="plegableUNO1" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon1">
+                            <div class="accordion-body">
+                                <p>
+                                    2000 horas de formación. Para trabajar en el montaje y el mantenimiento de infraestructuras de
+                                    telecomunicación en edificios, máquinas eléctricas, sistemas automatizados, instalaciones eléctricas de
+                                    baja tensión y sistemas domóticos.
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img5.jpg">
+                                            <a href="#modal5" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal5"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-4 mb-2 video">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/hRPJMHvXuOo?controls=1" height="667"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img16.jpg">
+                                            <a href="#modal16" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal16"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO11">
+                                Cuidados Auxiliares de Enfermería
+                            </button>
+                        </div>
+                        <div id="plegableUNO11" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon1">
+                            <div class="accordion-body">
+                                <p>
+                                    1400 horas de formación. Para ejercer una actividad profesional en el sector sanitario, en empresas
+                                    privadas o creando empresa propia.
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img4.jpg">
+                                            <a href="#modal4" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal4"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-4 mb-2 video">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/JZ0PqWa5USs?controls=1" height="667"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img17.jpg">
+                                            <a href="#modal17" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal17"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- ITEM 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO111">
+                                Gestión Administrativa
+                            </button>
+                        </div>
+                        <div id="plegableUNO111" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon1">
+                            <div class="accordion-body">
+                                <p>
+                                    2000 horas de formación. Este profesional ejerce su actividad tanto en grandes como en medianas y
+                                    pequeñas empresas, particularmente en el sector servicios, así como en las administraciones públicas,
+                                    ofreciendo apoyo administrativo en las tareas de administración y gestión.
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img10.jpg">
+                                            <a href="#modal10" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal10"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-4 mb-2 video">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/5D8YCH1oke0?controls=1" height="667"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img13.jpg">
+                                            <a href="#modal13" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal13"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 6 -->
+            <div class="accordion-item">
+                <button class="accordion-button collapsed botonacorde text-white" type="button" data-bs-toggle="collapse" data-bs-target="#plegableSEIS">
+                    Ciclos Formativos de Grado Superior
+                </button>
+            </div>
+            <div id="plegableSEIS" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon">
+                <div class="accordion-body">
+                    <p>
+                        Dentro del Grado Superior encontramos 2 cursos distintos:
+                    </p>
+                    <div class="accordion" id="EjemploAcordeon2">
+                        <!-- ITEM 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button botonacorde" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO2">
+                                Desarrollo de Aplicaciones Web
+                            </button>
+                        </div>
+                        <div id="plegableUNO2" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon2">
+                            <div class="accordion-body">
+                                <p>
+                                    2000 horas de formación. Desarrollar, implantar, y mantener aplicaciones web, con independencia del
+                                    modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma
+                                    segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares
+                                    establecidos.
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img19.jpg">
+                                            <a href="#modal19" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal19"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-4 mb-2 video">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/PADKPE_z5qE?controls=1" height="667"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img18.jpg">
+                                            <a href="#modal18" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal18"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button botonacorde" type="button" data-bs-toggle="collapse" data-bs-target="#plegableUNO3">
+                                Educación Infantil
+                            </button>
+                        </div>
+                        <div id="plegableUNO3" class="accordion-collapse collapse" data-bs-parent="#EjemploAcordeon2">
+                            <div class="accordion-body">
+                                <p>
+                                    2000 horas de formación. Para programar, diseñar y llevar a cabo actividades de intervención educativa y
+                                    de atención social con la infancia y sus familias.
+                                </p>
+                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img22.jpg">
+                                            <a href="#modal22" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal22"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-4 mb-2 video">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/ox6jSWhQpN4?controls=1" height="667"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- TARJETA 1 -->
+                                        <div class="card h-50 mt-2 mb-2">
+                                            <img class="card-img-center img-fluid contenido" src="img/img23.jpg">
+                                            <a href="#modal23" class="card-link stretched-link calcu" data-bs-toggle="modal" data-bs-target="#modal23"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img3.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img4.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img5.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img7.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img9.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img10.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img11.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal13">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img13.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal14">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img14.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal16">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img16.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal17">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img17.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal18">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img18.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal19">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img19.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal20">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img20.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal21">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img21.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal22">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img22.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal23">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img23.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal24">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/img24.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal25">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/infantil.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal26">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="mx-auto">
+                <!-- MODAL BODY -->
+                <div class="text-center mx-auto">
+                    <img src="img/primaria.jpg" class="img-fluid mx-auto text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-4 mt-sm-5 mt-md-5 foot">
+            <div class="col-9 mx-auto mt-2">
+                <footer class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
+                        <h4 class="pt-3 pb-3 texto"> Información</h4>
+                        <div class="pb-1"><a href="https://ces-vegamedia.es/aviso-legal/" target="_blank">Aviso Legal</a></div>
+                        <div class="pb-1"><a href="https://ces-vegamedia.es/privacidad/" target="_blank">Política de privacidad</a></div>
+                        <div class="pb-1"><a href="https://ces-vegamedia.es/cookies/" target="_blank">Política de cookies</a></div>
+                        <div class="pb-1"><a href="https://ces-vegamedia.es/condiciones-de-compra/" target="_blank">Condiciones generales de contratación</a></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mb-3">
+                        <h4 class="pt-3 pb-3 texto"> Formación</h4>
+                        <div class="pb-1"><a href="etapaseducativas.html">Infantil</a></div>
+                        <div class="pb-1"><a href="etapaseducativas.html">Primaria</a></div>
+                        <div class="pb-1"><a href="etapaseducativas.html">Secundaria</a></div>
+                        <div class="pb-1"><a href="etapaseducativas.html">Ciclos Formativos</a></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mb-3">
+                        <h4 class="pt-3 pb-3 texto"> Visítanos</h4>
+                        <div class="pb-1"><small>CES VEGA MEDIA</small></div>
+                        <div class="pb-1"><small>S. COOP</small></div>
+                        <div class="pb-1"><small>Ctra. De Mula, 37</small></div>
+                        <div class="pb-1"><small>30560 – Alguazas</small></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
+                        <h4 class="pt-3 pb-3 texto"> Contacto</h4>
+                        <div class="pb-1">Tlfn: 968 620913</div>
+                        <div class="pb-1">vegamedia@ces-vegamedia.es</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mb-3 mt-4">
+                        <a href="#"><img src="img/grifo.png" class="img-fluid"></a>
+                    </div>
+                </footer>
+                
+            </div>
+            <div class="container-fluid">
+                <footer class="row bg-dark text-center foo2">
+                    <div class="col-12 pt-2">
+                        <div>2022 CES Vega Media&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Centro de enseñanza © </div>
+                    </div>
+                    <div class="col-12 pt-2 pb-2">
+                        <small>COOPERATIVA COFINANCIADA POR EL FSE Y POR LA CARM&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;DESCUBRE TU TALENTO: + FP + OPORTUNIDADES</small>
+                    </div>
+                    
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
