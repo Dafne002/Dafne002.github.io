@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>History Guardians</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="shortcut icon" href="img/logo.ico"/>
+        <link href="estilos.css"  rel="stylesheet" type="text/css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .image-wrapper {
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #f7f7f7;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .image-info {
+                font-size: 12px;
+                color: #888;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .image-container img {
+                max-width: 100%;
+                max-height: 200px;
+                margin: 10px;
+                object-fit: contain;
+                border-radius: 4px;
+            }
+
+            .comment {
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #f7f7f7;
+                border-radius: 4px;
+            }
+
+            .comment .meta {
+                font-size: 12px;
+                color: #888;
+                margin-bottom: 5px;
+            }
+
+            .comment .name {
+                font-weight: bold;
+            }
+
+            .comment .content {
+                margin-top: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- CABECERA -->
+    <header>
+        <!-- Ventana Modal -->
+        <div class="modal fade" id="modalRegistro">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- MODAL BODY -->
+                    <div class="modal-body mx-auto">
+                        <div class="bg-white p-4 rounded-5 text-secondary shadow mb-2">
+                            <form action="">
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/login1.png" alt="Iniciar Sesión" style="height: 7em">
+                                </div>
+                                <div class="text-center fs-1 fw-bold">Iniciar Sesión</div>
+                                <div class="input-group mt-4">
+                                    <div class="input-group-text bg-success">
+                                        <img src="img/login.png" alt="username-icon" style="height: 1em">
+                                    </div>
+                                    <input class="form-control bg-light" type="email" placeholder="Correo" required>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <div class="input-group-text bg-success">
+                                        <img src="img/contrasena.png" alt="password-icon" style="height: 1em">
+                                    </div>
+                                    <input class="form-control bg-light" type="password" placeholder="Contraseña" required>
+                                </div>
+                                <div class="d-flex justify-content-around mt-1">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <input class="form-check-input" type="checkbox">
+                                        <div class="pt-1" style="font-size: 0.7em">Recordar Contraseña</div>
+                                    </div>
+                                    <div class="pt-1">
+                                        <a href="#" class="text-decoration-none text-info fw-semibold fst-italic" style="font-size: 0.7em">¿Olvidaste la contraseña?</a>
+                                    </div>
+                                </div>
+                                <div class="btn btn-success text-white w-100 mt-4 fw-semibold shadow-sm" type="submit">
+                                    Iniciar Sesión
+                                </div>
+                                <div class="d-flex gap-1 justify-content-center mt-2">
+                                    <div class="me-3">¿No tienes cuenta?</div>
+                                    <a href="#" class="text-decoration-none text-info fw-semibold">Regístrate</a>
+                                </div>
+                                <div class="p-3">
+                                    <div class="border-bottom text-center" style="height: 0.9em">
+                                        <span class="bg-white px-3">o</span>
+                                    </div>
+                                </div>
+                                <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+                                    <img src="img/google.jpg" alt="Google" style="height: 1.6em">
+                                    <div class="fw-semibold text-secondary">Continuar con Google</div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BARRA NAVEGACION ARRIBA -->
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav barra">
+                    <li class="nav-item me-auto ms-5 d-none d-lg-block mt-2"><a class="nav-link" href="#"><img src="img/logo.png" alt="Vega Media" style="width:140px" class="rounded-2"></a></li>
+                    <li class="nav-item d-block d-lg-none mx-auto"><a class="nav-link" href="#"><img src="img/logo.png" alt="Vega Media" style="width:300px" class="rounded-2"></a></li>
+                    <li class="nav-item text-center text-white d-none d-lg-block titul" style="margin-top:40px;">
+                        <h1 class="titulo" style="font-family: 'Mukta', sans-serif;">HISTORY GUARDIANS</h1>
+                    </li>
+                    <div class="w-100 d-block d-md-none"></div>
+                    <li class="nav-item pt-2 d-none d-lg-block redes me-5 ms-auto">
+                        <a role="button" href="#modalRegistro" data-bs-toggle="modal" data-bs-target="#modalRegistro" class="nav-link"><i class="bi bi-person-plus pe-1 text-white fs-1"></i></a>
+                    </li>
+                </ul>
+            </div>
+                <!-- <a class="navbar-brand col-auto" href="#"> -->
+        </div>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <div class="container-fluid justify-content-end">
+                <!-- BOTON TOGGLER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- ENLACES -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                    <ul class="navbar-nav menuNav">
+                        <li class="navbar-item pe-3">
+                            <a href="../index.html" class="nav-link"><i class="bi bi-house "></i> Inicio</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="requisitos.html" class="nav-link"><i class="bi bi-card-image"></i> Requisitos</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="comentarios.html" class="nav-link"><i class="bi bi-telephone-fill"></i> Comunidad</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="imagenes.html" class="nav-link"><i class="bi bi-telephone-fill"></i> Imágenes</a>
+                        </li>
+                        <li class="navbar-item pe-3">
+                            <a href="contacto.html" class="nav-link"><i class="bi bi-telephone-fill"></i> Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="col-auto d-block d-sm-none mb-2">
+                        <a class="btn btn-outline-light" role="button" href="#modalRegistro" data-bs-toggle="modal" data-bs-target="#modalRegistro">Mi Cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- IMAGEN DE ABAJO -->
+        
+    </header>
+
+    <div class="container-fluid">
+        <div class="col-11 mx-auto">
+            <h1 class="text-center mb-1 servi mt-3">Foro imágenes</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="image-gallery"></div>
+        <form id="image-upload-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comentario:</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Seleccionar imagen:</label>
+            <input type="file" class="form-control" id="image" accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Subir imagen</button>
+        </form>
+        
+      </div>
+    
+      <script>
+        document.getElementById('image-upload-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            var currentTime = new Date().toLocaleTimeString();
+            var fileInput = document.getElementById('image');
+            var file = fileInput.files[0];
+        
+            if (file) {
+                var reader = new FileReader();
+            
+                reader.onload = function(e) {
+                var imageUrl = e.target.result;
+                addImageToGallery(imageUrl, name, currentTime, comment);
+                };
+            
+                reader.readAsDataURL(file);
+            }
+        
+            fileInput.value = '';
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+        
+        function addImageToGallery(imageUrl, name, time, comment) {
+            var imageContainer = document.getElementById('image-gallery');
+            
+            var imageWrapper = document.createElement('div');
+            imageWrapper.classList.add('image-wrapper');
+            
+            var imageInfo = document.createElement('div');
+            imageInfo.classList.add('image-info');
+            imageInfo.textContent = name + ' - ' + time;
+            
+            var imageElement = document.createElement('img');
+            imageElement.src = imageUrl;
+            imageElement.classList.add('img-thumbnail');
+            
+            var commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.textContent = comment;
+            
+            imageWrapper.appendChild(imageInfo);
+            imageWrapper.appendChild(imageElement);
+            imageWrapper.appendChild(commentElement);
+            imageContainer.appendChild(imageWrapper);
+        }
+      </script>
+
+        <div class="container-fluid mt-4">
+            <div class="col-10 mx-auto text-end">
+                <button type="button" class="btn btn-dark boton1 rounded-5 position-relative" data-bs-toggle="offcanvas" data-bs-target="#demo" style="font-size:20px">
+                    <i class="bi bi-chat-left-dots-fill text-white"></i> <span class="badge rounded-pill bg-warning text-dark position-absolute top-0 start-100 translate-middle">+2</span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header bg-warning text-black">
+                        <button type="button" class="btn btn-warning mt-1" onclick="enviar()" data-bs-dismiss="offcanvas" style="font-size: 20px"><i class="bi bi-arrows-angle-contract text-white"></i></button>
+                        <div class="offcanvas-title">
+                            <div class="btn d-flex gap-3 justify-content-center mt-2">
+                                <img src="img/avatar.png" alt="Google" style="width: 60px" class="img-fluid rounded-5">
+                                <h5 class="pt-3 text-white fw-bold text-black">Dafne Jimenez</h5>
+                            </div>
+                        </div>
+                        <button type="button" class="btn mt-1" data-bs-dismiss="offcanvas" style="font-size: 20px"><i class="bi bi-x-lg text-white"></i></button>
+                    </div>
+                    <div class="offcanvas-body bg-white text-dark">
+                        <div class="card h-40 mx-auto" style="background-color:#f1f1f1;">
+                            <div class="card-body text-center carta1">
+                                <div class="caja-top text-start">
+                                    <div class="perfil">
+                                        <div class="perfil-img">
+                                            <img src="img/avatar.png" alt="usuario2">
+                                        </div>
+                                        <div class="name-user">
+                                            <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                            <small class="pensativo text-start">Hace 3 minutos</small>
+                                        </div>
+                                    </div>
+                                    <div class="reseñas">
+                                        <i class="fa fa-reply enviar"></i>
+                                        <i class="fa fa-heart corazon"></i>
+                                    </div>
+                                </div>
+                    
+                                <div class="comentarios_clientes text-start text-black">
+                                    Bienvenido al chat en línea, a través de aquí podrás ponerte en contacto con nosotros acerca de alguna duda que te haya quedado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-40 mx-auto mt-3" style="background-color:#f1f1f1;">
+                            <div class="card-body text-center carta1">
+                                <div class="caja-top text-start">
+                                    <div class="perfil">
+                                        <div class="perfil-img">
+                                            <img src="img/avatar.png" alt="usuario2">
+                                        </div>
+                                        <div class="name-user">
+                                            <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                            <small class="pensativo text-start">Hace 1 minutos</small>
+                                        </div>
+                                    </div>
+                                    <div class="reseñas">
+                                        <i class="fa fa-reply enviar"></i>
+                                        <i class="fa fa-heart corazon"></i>
+                                    </div>
+                                </div>
+                    
+                                <div class="comentarios_clientes text-start text-black">
+                                    Para poder contactar debes introducir tu número de teléfono o email para que podamos escribirte con la menor brevedad posible.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-40 mx-auto mt-3" style="background-color:#f1f1f1;">
+                            <div class="card-body text-center carta2">
+                                <div class="caja-top text-start">
+                                    <div class="perfil">
+                                        <div class="name-user">
+                                            <strong class="text-start text-black">Usuario&nbsp; <small class="pensativo1 text-start">Hace menos de 1 minuto</small></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="comentarios_clientes text-start text-black">
+                                    <!-- CONSEGUIREMOS UN EFECTO DISTINTO CON ESTAS DOS CLASES NUEVAS INCORPORADAS -->
+                                    <div class="col-12 mb-1 fw-bold text-danger" id="alertas1">
+                                        Debes rellenar uno de los dos campos
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="email" placeholder="Correo Electrónico..." class="form-control" id="usu">
+                                    </div>
+                                    
+                                    <div id="texto1" class="mt-2">Block Mayúsculas Activo Cuidado</div>
+                                    <div class="p-3 mb-2">
+                                        <div class="text-center" style="height: 1em;border-bottom: #f1f1f1;">
+                                            <span class="px-3">o</span>
+                                        </div>
+                                    </div>
+                                    <input type="number" placeholder="Numero de Teléfono..." class="form-control" id="telefono">
+                                    <div class="mt-2 text-end ms-auto">
+                                        <button name="enviar" type="submit" name="enviar" class="btn btn-warning text-center" onclick="enviar()">Enviar <i class="bi bi-send-x-fill"></i></button>
+                                    </div>
+                                    
+                                </div>
+                                <script>
+                                    var input = document.getElementById("usu");
+                                    var text = document.getElementById("texto1");
+                                    input.addEventListener("keyup", function(event) {
+
+                                    if (event.getModifierState("CapsLock")) {
+                                        text.style.display = "block";
+                                    } else {
+                                        text.style.display = "none"
+                                    }
+                                    });
+
+                                    function enviar(){
+                                        var a = document.getElementById("usu");
+                                        var b = document.getElementById("telefono");
+                                        document.getElementById("alertas").style.display="none";
+                                        if((a.value && b.value) == ""){
+                                            document.getElementById("alertas1").style.display="block";
+                                            document.getElementById("alertas").style.display="none";
+                                        }
+                                        if((a.value || b.value) != ""){
+                                            document.getElementById("usu").value="";
+                                            document.getElementById("telefono").value="";
+                                            document.getElementById("alertas").style.display="block";
+                                            document.getElementById("alertas1").style.display="none";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="card h-40 mx-auto mt-3" style="background-color:#f1f1f1;" id="alertas">
+                            <div class="card-body text-center carta1">
+                                <div class="caja-top text-start">
+                                    <div class="perfil">
+                                        <div class="perfil-img">
+                                            <img src="img/avatar.png" alt="usuario2">
+                                        </div>
+                                        <div class="name-user">
+                                            <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                            <small class="pensativo text-start">Ahora mismo</small>
+                                        </div>
+                                    </div>
+                                    <div class="reseñas">
+                                        <i class="fa fa-reply enviar"></i>
+                                        <i class="fa fa-heart corazon"></i>
+                                    </div>
+                                </div>
+                    
+                                <div class="comentarios_clientes text-start text-black">
+                                    Perfecto, en breve nos pondremos en contacto contigo, muchas gracias por confiar en nosotros.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container-fluid">
+            <div class="row mt-4 mt-sm-5 mt-md-5 foot">
+                <div class="col-9 mx-auto mt-2">
+                    <footer class="row mx-auto">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 mx-auto">
+                            <h4 class="pt-3 pb-3 texto ps-0 text-center"> Política</h4>
+                            <div class="pb-2 ps-1"><a href="#">Política de Privacidad</a></div>
+                            <div class="pb-2 ps-1"><a href="#">Política de Datos</a></div>
+                            <div class="pb-2 ps-1"><a href="#">Cookies</a></div>
+                            <div class="pb-2 ps-1"><a href="#">Términos y condiciones</a></div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 mx-auto">
+                            <h4 class="pt-3 pb-3 texto ps-0 text-center"> Contacto</h4>
+                            <div class="pb-2 ps-1"><a href="#">Dafne Jiménez o Paz López</a></div>
+                            <div class="pb-2 ps-1"><a href="#">+34 657 837 438</a></div>
+                            <div class="pb-2 ps-1"><a href="mailto:dafne@gmail.com">dafne@gmail.com</a></div>
+                            <div class="pb-2 ps-1"><a href="mailto:paz@gmail.com">paz@gmail.com</a></div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3 mx-auto ">
+                            <h4 class="pt-3 pb-3 texto ps-0 text-center"> Redes Sociales</h4>
+                            <div class="redes-sociales">
+                                <div class="pb-0"><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="bi bi-facebook text-white"></i></a></div>
+                                <div class="pb-0"><a href="https://twitter.com" target="_blank" class="twitter" class="twitter"><i class="bi bi-twitter text-white text-center mx-auto"></i></a></div>
+                                <div class="pb-0"><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="bi bi-instagram text-white"></i></a></div>
+                                <div class="pb-0"><a href="https://youtube.com/@cocoterasforever3494" target="_blank" class="gmail"><i class="bi bi-youtube text-white"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 align-self-center mx-auto text-center">
+                            <a href="#" class="oler ms-5"><img src="img/logo.png" class="img-fluid mx-auto text-center" style="width:100%"></a>
+                        </div>
+                    </footer>
+                </div>
+                <div class="container-fluid">
+                    <footer class="row text-center foo2">
+                        <div class="col-12 pt-3 pb-4">
+                            <div>Dafne Jiménez López&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Paz López Asensio</div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
