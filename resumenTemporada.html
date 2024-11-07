@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Resumen Temporada</title>
+            <link href="estilo.css"  rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="./css/bootstrap.min.css" rel="stylesheet">
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <link rel="shortcut icon" href="./img/prueba2.ico"/>
+            <style type="text/css">
+                body{
+                    background-color:black;
+                    color:white;
+                    /* padding-top: 73px; */
+                }
+                .contacto{
+                    background-color: #dadada;
+                }
+
+            </style>
+        </head>
+        <body>
+            <!-- CABECERA DE LA PÁGINA WEB -->
+            <header>
+                <div class="container-fluid">
+                    <div class="row foot2">
+                        <ul class="nav">
+                            <li class="nav-item me-auto ms-2 d-none d-xl-block"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:125px" class="rounded-2"></a></li>
+                            <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li>
+                            <li class="nav-item text-center pt-2 text-white">
+                                <img src="img/fondo.jpg" style="width:75%" class="d-none d-md-block d-lg-none text-center mx-auto">
+                                <img src="img/fondo.jpg" style="width:85%" class="d-block d-md-none d-lg-block text-center mx-auto">
+                            </li>
+                            <div class="w-100 d-block d-md-none"></div>
+                            <li class="nav-item ms-auto d-none d-xl-block">
+                                <a class="nav-link" href="#"><img src="img/prueba.png" style="width:125px"></a>
+                            </li>
+                            <!-- <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li> -->
+                        </ul>
+                    </div>
+                        <!-- <a class="navbar-brand col-auto" href="#"> -->
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-dark sticky-top navegar mt-2">
+                    <div class="container-fluid">
+                        <!-- LOGO -->
+                        <!-- <a href="#" class="navbar-brand text-light fw-bold me-auto">
+                            <img src="./img/prueba.png" style="width:60px" class="img-fluid">
+                        </a>
+                 -->
+                        <!-- BOTON TOGGLER -->
+                        <button class="navbar-toggler ms-auto text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <!-- ENLACES -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                            <ul class="navbar-nav menuNav">
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="index.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house-fill text-warning"></i>&nbsp; Inicio</a>
+                                </li>
+                                <li class="nav-item pe-1 me-1">
+                                    <a class="nav-link text-light fw-bold me-3 ms-3" href="resumenTemporada.html"><i class="bi bi-mortarboard-fill text-warning"></i>&nbsp; Resumen</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-puzzle-fill text-warning"></i>&nbsp; Aclaraciones</a>
+                                    <div class="dropdown-content aclara">
+                                        <a href="explicacion.html">Explicación</a>
+                                        <a href="final.html">Final</a>
+                                        <a href="simbologia.html">Simbología</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-people-fill text-warning"></i>&nbsp; Personajes</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-images text-warning"></i>&nbsp; Galería</a>
+                                    <div class="dropdown-content galer">
+                                        <a href="galeria.html">Imágenes</a>
+                                        <a href="videos.html">Vídeos</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="recomendacion.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-pencil-fill text-warning"></i>&nbsp; Recomendaciones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="contenido">
+                <div class="container-fluid">
+                    <!-- EJEMPLO DE CAROUSEL -->
+                    <div id="ejemplo-carousel" class="carousel slide mb-4 col-10 mx-auto" data-bs-ride="carousel">
+                      <!-- Primera parte con las imágenes de la presentación -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="img/Carousel/carousel2.jpg" alt="Fachada" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/Carousel1.jpg" alt="Patio Infantil" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/carousel3.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel4.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel5.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel6.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                      </div>
+                      <!-- Segunda parte con los controles derecha e izquierda -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </button>
+                      <!-- Tercera parte con los indicadores -->
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="3"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="4"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="5"></button>
+                      </div>
+                    </div> 
+                </div> 
+                <div class="contenido">
+                    <div class="container-fluid">
+                        <div class="col-10 mx-auto">
+                            <div class="mb-3 mt-3">
+                                Dark está compuesta por 26 episodios, divididos en tres temporadas. En el recorrido de la serie se va fraguando un misterio que inicia desde el capítulo piloto y continúa hasta el final de la tercera temporada.
+                            </div>
+                            <div class="alert alert-success alert-dismissible fade show mb-3 text-center fw-bold fs-5">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                ¡ATENCIÓN! A partir de aquí hay spoilers.
+                            </div>
+                            <ul class="nav nav-tabs nav-justified prueba">
+                                <li class="nav-item">
+                                    <a class="nav-link active prueba2" href="#home_" data-bs-toggle="tab">Temporada 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link prueba2" href="#menu1_" data-bs-toggle="tab">Temporada 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link prueba2" href="#menu2_" data-bs-toggle="tab">Temporada 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="container">
+                        <main class="col-12 order-2 mx-auto">
+                        <div class="container-fluid">
+                            <div class="tab-content">
+                                <div id="home_" class="container tab-pane active"><br>
+                                    <h1 class="mb-3 servi text-center">El enigma de los viajes en el tiempo</h1>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3">
+                                            <img src="img/resumen/temporada1/1.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center">
+                                            <p>
+                                                En el año 2019 Michael Kahnwald decide quitarse la vida y deja una carta dirigida a Ines, su madre.
+                                            </p>
+                                            <p>
+                                                Jonas, su hijo, queda muy marcado después de lo sucedido y trata de recuperarse psicológicamente con ayuda de Peter Doppler, su psiquiatra.
+                                            </p>
+                                            <p>
+                                                Al mismo tiempo, el pueblo de Winden lamenta la desaparición de un joven llamado Erik. Ni los vecinos, ni la policía saben lo que ha podido ocurrir.
+                                            </p>
+                                            <p>
+                                                Una noche, mientras Jonas anda con sus amigos Bartosz, Magnus y Martha, el hermano pequeño de estos últimos, Mikkel, desaparece.
+                                            </p>
+                                            <p>
+                                                A partir de ese momento, el cuerpo de policía de Winden, del que el padre de Mikkel forma parte, pone todos sus esfuerzos por encontrar al menor con vida.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3 order-lg-2">
+                                            <img src="img/resumen/temporada1/2.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center order-lg-1">
+                                            <p>Pronto, también aparece un cuerpo de un menor desaparecido en 1986.</p>
+                                            <p>
+                                                Por su parte, Jonas, en su intento de descubrir el motivo por el que su padre se suicidó, realiza un viaje espacio-temporal gracias a la ayuda de un misterioso hombre. Entonces descubre que, en realidad, su padre es Mikkel Nielsen, que creció bajo el nombre de Michael Kahnwald y fue adoptado por su abuela Ines.
+                                            </p>
+                                            <p>
+                                                1953, 1986, 2019 son las líneas espacio-temporales a partir de las cuales se va desgranando esta temporada. A través de ellas, se descubren los secretos de cada una de las familias. Todos ellos tienen algo en común y sus propios secretos. Entretanto aparece Noah, un misterioso cura que parece estar detrás de los viajes temporales.
+                                            </p>
+                                            <p>
+                                                Al final de la temporada, Jonas viaja a 2052 y descubre un Winden completamente arrasado.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row mb-5 mx-auto">
+                                        <aside class="col-lg-7 mt-3 mx-auto">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="mx-auto" src="https://www.youtube.com/embed/zmxw7NgsBH4?controls=1"></iframe>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                                <div id="menu1_" class="container tab-pane fade"><br>
+                                    <h1 class="mb-3 servi text-center">Hacia el apocalipsis</h1>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3 order-lg-2">
+                                            <img src="img/resumen/temporada2/1.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center order-lg-1">
+                                            <p>Jonas se encuentra atrapado en el año 2052. Allí solo están los supervivientes del apocalipsis ocurrido en 2020. El joven intenta volver a 2019 para poder evitar el desastre. Sin embargo, descubre que ya no es posible hacer viajes en el tiempo.</p>
+                                            <p>
+                                                Al final logra escapar de esa época pero acaba inmerso en 1921. Entonces conoce a Noah, un misterioso sacerdote que nunca envejece.
+                                            </p>
+                                            <p>
+                                                También descubre lo que hay detrás de una organización secreta llamada “Sic Mundus”, cuyo cabecilla se llama Adam (en realidad es Jonas), quien planea un apocalipsis con el fin de que el pasado, el presente y el futuro se unan.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3">
+                                            <img src="img/resumen/temporada2/2.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center">
+                                            <p>
+                                                Entretanto Claudia, jefa de la planta nuclear de Winden en 1986, intenta parar a la organización e impedir el desastre. Para ello, cuenta con la ayuda de Jonas del futuro.
+                                            </p>
+                                            <p>
+                                                Por otro lado, algunos habitantes de Winden descubren los viajes en el tiempo y la identidad de los “viajeros”.
+                                            </p>
+                                            <p>
+                                                Jonas se da cuenta de que todo lo que ha ocurrido es consecuencia de sus actos. Por ello, quiere evitar el apocalipsis de 2020 y cambiar el desarrollo de los acontecimientos e impedir la muerte de Martha.
+                                            </p>
+                                            <p>
+                                                Cuando llega el día del apocalipsis, Martha muere y aparece otra muchacha con el mismo aspecto que la joven, la cual procede de otra dimensión.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row mb-5 mx-auto">
+                                        <aside class="col-lg-7 mt-3 mx-auto">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="mx-auto" src="https://www.youtube.com/embed/Nghb6pT0ghk?controls=1"></iframe>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                                <div id="menu2_" class="container tab-pane fade"><br>
+                                    <h1 class="mb-3 servi text-center">Un nuevo mundo</h1>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3 ">
+                                            <img src="img/resumen/temporada3/2.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center ">
+                                            <p>Jonas viaja en 2019 a un nuevo Winden, es su pueblo pero se trata de un mundo paralelo. En esta nueva realidad él no existe, pero las desaparición de uno de los jóvenes del pueblo ha marcado también a sus habitantes.</p>
+                                            <p>
+                                                Asimismo, Jonas logra localizar a sus conocidos, entre ellas Martha, la cual no es la chica de la que él está enamorado.
+                                            </p>
+                                            <p>
+                                                En este Winden, existen cambios con respecto al suyo, Jonas no existe y su madre, Hannah, espera un bebé de Ulrich Nielsen. Por otro lado, el matrimonio Doppler también está roto y Charlotte mantiene una relación clandestina con Ulrich. Esta vez es su hija Franziska quien es sorda y no Elisabeth.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <aside class="col-lg-6 mt-3 order-lg-2">
+                                            <img src="img/resumen/temporada3/1.jpg" class="img-fluid">
+                                        </aside>
+                                        <main class="col-lg-6 mt-3 align-self-center order-lg-1">
+                                            <p>
+                                                Esta temporada abarca tres siglos diferentes. En ella, los habiantes de Widen intentan por todos los medios salvar sus trágicos destinos y evitar el sufrimiento de sus familiares.
+                                            </p>
+                                            <p>
+                                                Pero, finalmente, Claudia revela la verdad a Adam, el cual tiene la intención de destruir todo lo que abarca los viajes en el tiempo. La mujer habla de un mundo origen del cual surgen dos mundos interconectados, los cuales fueron creados por el relojero Tannhaus con el fin de evitar la muerte de su hijo.
+                                            </p>
+                                        </main>
+                                    </div>
+                                    <div class="row mb-5 mx-auto">
+                                        <aside class="col-lg-7 mt-3 mx-auto">
+                                            <div class="ratio ratio-16x9 mx-auto">
+                                                <iframe class="mx-auto" src="https://www.youtube.com/embed/z2wPBG-GSJ0?controls=1"></iframe>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row mt-4 mt-sm-5 mt-md-5 foot">
+                    <div class="col-9 mx-auto mt-2">
+                        <footer class="row mx-auto">
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Información</h4>
+                                <div class="pb-2 ps-1"><a href="https://es.wikipedia.org/wiki/Dark_(serie_de_televisi%C3%B3n)" target="_blank">Wikipedia</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.netflix.com/es/title/80100172" target="_blank">Página Oficial Netfilx</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.filmaffinity.com/es/film103430.html" target="_blank">Film Affinity</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.sensacine.com/series/serie-20328/" target="_blank">SensaCine</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Explicación</h4>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=6P3ZALooCd4" target="_blank">Temporadas</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=Jexrg8k9-vU" target="_blank">Análisis</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=KWAQSU2rmAQ" target="_blank">Antes de todo</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3 mx-auto ">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Redes Sociales</h4>
+                                <div class="redes-sociales">
+                                    <div class="pb-0"><a href="https://www.facebook.com/netflixespana/" target="_blank" class="facebook"><i class="bi bi-facebook text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://twitter.com/netflix" target="_blank" class="twitter" class="twitter"><i class="bi bi-twitter text-white text-center mx-auto"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.instagram.com/netflixes/" target="_blank" class="instagram"><i class="bi bi-instagram text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.youtube.com/Netflix" target="_blank" class="gmail"><i class="bi bi-youtube text-white"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 align-self-center mx-auto text-center">
+                                <a href="#" class="oler ms-5"><img src="img/prueba1.png" class="img-fluid mx-auto text-center" style="width:100%"></a>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="container-fluid">
+                        <footer class="row text-center foo2">
+                            <div class="col-12 pt-2 pb-4">
+                                <div>Dafne Jiménez López&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:dafne.jimenez.lopez@gmail.com">dafne.jimenez.lopez@gmail.com</a> </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+    </html>

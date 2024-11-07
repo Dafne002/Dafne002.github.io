@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia Nielsen</title>
+    <link href="../estilo.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../img/prueba2.ico"/>
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            background-color:#212529;
+            color:white;
+        }
+        .parallaxUlrich{
+          /* The image used */
+          background-image: url('../img/Familias/Familia2/1.jpg');
+
+          /* Full height */
+          height: 100%; 
+          width: auto;
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          /* background-position: center; */
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative; /* Needed to position the cutout text in the middle of the image */
+          filter: opacity(100%);
+        }
+        
+      </style>
+</head>
+<body>
+
+  <div class="alert alert-info alert-dismissible alert-small fade show text-center fw-bold fs-5 mb-0">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <i class="bi bi-info-circle-fill"></i>&nbsp; PARA MÁS INFORMACIÓN PULSAR ENCIMA DEL NOMBRE DEL PERSONAJE.
+  </div> 
+
+  <!-- CABECERA DE LA PÁGINA WEB -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navegar">
+        <div class="container-fluid">
+
+            <!-- BOTON TOGGLER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ENLACES -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                <div class=" d-block d-md-none">
+                  <ul class="navbar-nav menuNav">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas1">Ulrich</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna1">Katharina</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#martha1">Martha/Eva</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#magnus1">Magnus</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#jana1">Jana</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#tronte1">Tronte</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#agnes1">Agnes</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#noah1">Noah/Hanno</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="d-none d-md-block">
+                  <ul class="navbar-nav menuNav ">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas">Ulrich</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna">Katharina</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#martha">Martha/Eva</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#magnus">Magnus</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#jana">Jana</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#tronte">Tronte</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#agnes">Agnes</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#noah">Noah/Hanno</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="parallaxUlrich d-none d-md-block"><a name="jonas">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text">Ulrich</div>
+    </a></a>
+  </div>
+
+  <div class="parallaxUlrichMV d-block d-md-none"><a name="jonas1">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text">Ulrich</div>
+    </a></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxKatharina d-none d-md-block"><a name="hanna">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalKhatarina">
+      <div class="text1">Katharina</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallaxKatharinaMV d-block d-md-none"><a name="hanna1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalKhatarina">
+      <div class="text1">Katharina</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+      
+  <div class="parallaxMartha d-none d-md-block"><a name="martha">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmartha">
+      <div class="text2">Martha Nielsen/ Eva</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallaxMarthaMV d-block d-md-none"><a name="martha1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmartha">
+      <div class="text2">Martha Nielsen/ Eva</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxMagnus d-none d-md-block"><a name="magnus">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMagnus">
+      <div class="text3">Magnus Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxMagnusMV d-block d-md-none"><a name="magnus1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMagnus">
+      <div class="text3">Magnus Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxJana d-none d-md-block"><a name="jana">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalJana">
+      <div class="text3">Jana Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxJanaMV d-block d-md-none"><a name="jana1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalJana">
+      <div class="text3">Jana Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxTronte d-none d-md-block"><a name="tronte">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalTronte">
+      <div class="text3">Tronte Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxTronteMV d-block d-md-none"><a name="tronte1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalTronte">
+      <div class="text3">Tronte Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxAgnes d-none d-md-block"><a name="agnes">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalAgnes">
+      <div class="text3">Agnes Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxAgnesMV d-block d-md-none"><a name="agnes1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalAgnes">
+      <div class="text3">Agnes Nielsen</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxNoah d-none d-md-block"><a name="noah">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalNoah">
+      <div class="text2">Noah/Hanno</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxNoahMV d-block d-md-none"><a name="noah1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalNoah">
+      <div class="text2">Noah/Hanno</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <!-- Ventana Modal Charlotte -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Ulrich</h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;">
+                Interpretada por Stephanie Amarell (1986) y Karoline Eichhorn (2019).
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#jonasA" data-bs-toggle="tab">Mundo de Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#jonasO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#jonasE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="jonasA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Es oficial de policía y tiene una aventura amorosa con Hannah. Cuando su hijo pequeño desaparece, investiga sobre los viajes en el tiempo 
+                          y viaja a 1953, donde queda encarcelado después de ser acusado de un delito .</p>
+                    </div>
+                    <div id="jonasE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>También es oficial de policía y está casado con Hannah, con la que espera un hijo. Sin embargo, tiene una aventura con su compañera 
+                          de oficio Charlotte.</p>
+                    </div>
+                    <div id="jonasO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>No existe.</p>
+                    </div>
+                  </div>
+                <!-- <a href="prueba.html">Volver a la pantalla de personajes</a> -->
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Katharina-->
+  <div class="modal fade" id="modalKhatarina">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Khatarina</h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                Nele Trebs (en 1986) y Jördis Triebel (en 2019) encarnan a Katharina.
+                
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#hannaA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#hannaO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#hannaE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="hannaA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Es la esposa de Ulrich y la madre de Mikkel, Magnus y Martha. Es directora del colegio de Winden. Sospecha de la infidelidad de su marido con Hannah.</p>
+                    </div>
+                    <div id="hannaE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>Es la ex esposa de Ulrich y también es la directora del centro donde estudian sus tres hijos.</p>
+                    </div>
+                    <div id="hannaO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>Vive en Winden y no tiene hijos. Es amiga de Hannah y Regina.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Martha-->
+  <div class="modal fade" id="modalmartha">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Martha </h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                Lisa Vicari da vida a la hija mediana de Katharina y Ulrich Nielsen. Su yo adulto sería Eva (Barbara Nüse).
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#mikelA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#mikelO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#mikelE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="mikelA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Es una adolescente que dedica sus ratos libres a la interpretación. Tiene una relación con Bartosz Tiedemann pero en realidad está 
+                          enamorada de Jonas, quien a su vez es su sobrino.</p>
+                    </div>
+                    <div id="mikelE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>Aquí conoce a Jonas del otro mundo y tiene una relación con otro compañero de clase, Kilian Obendorf.</p>
+                    </div>
+                    <div id="mikelO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>No existe.</p>
+                    </div>
+                  </div>
+                <!-- <a href="prueba.html">Volver a la pantalla de personajes</a> -->
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Magnus-->
+  <div class="modal fade" id="modalMagnus">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Magnus</h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                Encarnado por Moritz Jahn (2019) y Wolfram Koch, Magnus es el hijo mayor del matrimonio Nielsen. Está enamorado de Franziska Doppler, tanto en el mundo de Adam como en el de Eva.
+                
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#inesA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#inesO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#inesE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="inesA" class="container tab-pane active"><br>
+                        <h2 class="mb-3">Mundo de Adam</h2>
+                        <p>Está implicado en el mundo de las drogas cuando su hermano menor desaparece. Viaja a 1888 y la máquina del tiempo deja de funcionar. Está en el bando de Adam.</p>
+                    </div>
+                    <div id="inesE" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Mundo de Eva</h2>
+                        <p>Es un joven desentendido que no le da importancia a los estudios. Se extraña por el comportamiento de su hermana Martha.</p>
+                    </div>
+                    <div id="inesO" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Origen</h2>
+                        <p>No existe.</p>
+                    </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Ventana Modal Jana-->
+    <div class="modal fade" id="modalJana">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+  
+              <!-- MODAL HEADER -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Jana</h4>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+              </div>
+  
+              <!-- MODAL BODY -->
+              <div class="modal-body">
+                <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                  Rike Sindler (1952), Anne Lebinsky (1986) y Tatja Seibt (2019) dan vida a la madre de Ulrich y suegra de Katharina.
+                  
+                  <div class="container mt-4">
+                    <ul class="nav nav-tabs nav-justified prueba ">
+                      <li class="nav-item">
+                          <a class="nav-link active prueba2" href="#janaA" data-bs-toggle="tab">Mundo Adam</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link prueba2" href="#janaO" data-bs-toggle="tab">Origen</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link prueba2" href="#janaE" data-bs-toggle="tab">Mundo Eva</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <div class="tab-content text-start">
+                      <div id="janaA" class="container tab-pane active"><br>
+                          <h2 class="mb-3">Mundo de Adam</h2>
+                          <p>Está casada con Tronte Nielsen. En 1986 su hijo menor desaparece misteriosamente y en 2019 aún guarda la esperanza de que todavía siga vivo.</p>
+                      </div>
+                      <div id="janaE" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Mundo de Eva</h2>
+                          <p>Existe como madre de Ulrich, pero no aparece el personaje.</p>
+                      </div>
+                      <div id="janaO" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Origen</h2>
+                          <p>No existe.</p>
+                      </div>
+                </div>
+              </div>
+  
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ventana Modal Jana-->
+    <div class="modal fade" id="modalTronte">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+  
+              <!-- MODAL HEADER -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Tronte</h4>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+              </div>
+  
+              <!-- MODAL BODY -->
+              <div class="modal-body">
+                <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                  Joshio Marlon (1953), Felix Kramer (1986) y Walter Kreye (2019) dan vida a este personaje.
+                  
+                  <div class="container mt-4">
+                    <ul class="nav nav-tabs nav-justified prueba ">
+                      <li class="nav-item">
+                          <a class="nav-link active prueba2" href="#tronteA" data-bs-toggle="tab">Mundo Adam</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link prueba2" href="#tronteO" data-bs-toggle="tab">Origen</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link prueba2" href="#tronteE" data-bs-toggle="tab">Mundo Eva</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <div class="tab-content text-start">
+                      <div id="tronteA" class="container tab-pane active"><br>
+                          <h2 class="mb-3">Mundo de Adam</h2>
+                          <p>Es padre de Ulrich y Mads e hijo de Agnes Nielsen y el desconocido, el hijo de Jonas y Martha. En 1986 es periodista y muy amigo de Regina Tiedemann.</p>
+                      </div>
+                      <div id="tronteE" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Mundo de Eva</h2>
+                          <p>No aparece, pero es igualmente el padre de Ulrich y Mads, el esposo de Jana.</p>
+                      </div>
+                      <div id="tronteO" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Origen</h2>
+                          <p>No existe.</p>
+                      </div>
+                </div>
+              </div>
+  
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ventana Modal Jana-->
+    <div class="modal fade" id="modalAgnes">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+  
+              <!-- MODAL HEADER -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Agnes</h4>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+              </div>
+  
+              <!-- MODAL BODY -->
+              <div class="modal-body">
+                <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                  Interpretada por Helena Pieske (1921) y Anje Traue (1953) es un personaje que sirve de nexo y explica la relación que hay entre las familias Kahnwald, Nielsen, Doppler y Tidemann.
+                  
+                  <div class="container mt-4">
+                    <ul class="nav nav-tabs nav-justified prueba ">
+                      <li class="nav-item">
+                          <a class="nav-link active prueba2" href="#agnesA" data-bs-toggle="tab">Mundo Adam</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link prueba2" href="#agnesO" data-bs-toggle="tab">Origen</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link prueba2" href="#agnesE" data-bs-toggle="tab">Mundo Eva</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <div class="tab-content text-start">
+                      <div id="agnesA" class="container tab-pane active"><br>
+                          <h2 class="mb-3">Mundo de Adam</h2>
+                          <p>es, por un lado, abuela de Ulrich Nielsen y tatarabuela de Jonas Kahnwald/ Adam. Asimismo es la hermana del misterioso Noah y también 
+                            tía de Charlotte Doppler. También es hija de Silja y Bartosz Tidemann y nieta, por tanto de Hannah y Regina, lo que también la convierte en 
+                            sobrina de Jonas.</p>
+                      </div>
+                      <div id="agnesE" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Mundo de Eva</h2>
+                          <p>No aparece, pero comparte los parentescos anteriores.</p>
+                      </div>
+                      <div id="agnesO" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Origen</h2>
+                          <p>No existe.</p>
+                      </div>
+                </div>
+              </div>
+  
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ventana Modal Jana-->
+    <div class="modal fade" id="modalNoah">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+  
+              <!-- MODAL HEADER -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Noah</h4>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+              </div>
+  
+              <!-- MODAL BODY -->
+              <div class="modal-body">
+                <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px">
+                  Este personaje interpretado por Mark Waschke es una de las claves fundamentales para comprender los viajes en el tiempo.
+                  
+                  <div class="container mt-4">
+                    <ul class="nav nav-tabs nav-justified prueba ">
+                      <li class="nav-item">
+                          <a class="nav-link active prueba2" href="#noahA" data-bs-toggle="tab">Mundo Adam</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link prueba2" href="#noahO" data-bs-toggle="tab">Origen</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link prueba2" href="#noahE" data-bs-toggle="tab">Mundo Eva</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <div class="tab-content text-start">
+                      <div id="noahA" class="container tab-pane active"><br>
+                          <h2 class="mb-3">Mundo de Adam</h2>
+                          <p>Es sacerdote y forma parte de la organización “Sic mundus” liderada por Adam. Noah también es un nexo entre familias. Por un lado, 
+                            es el hermano de Agnes Nielsen, el hijo mayor de Silja y Bartosz Tidemann y, por otro lado, es el padre de Charlotte Doppler, quien nació 
+                            fruto de su unión con Elisabeth Doppler.</p>
+                      </div>
+                      <div id="noahE" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Mundo de Eva</h2>
+                          <p>Es miembro de la sociedad secreta de Eva, en el bando de la luz. También es padre de Charlotte, a quien tiene con Elisabeth Doppler.</p>
+                      </div>
+                      <div id="noahO" class="container tab-pane fade"><br>
+                          <h2 class="mb-3">Origen</h2>
+                          <p>No existe.</p>
+                      </div>
+                </div>
+              </div>
+  
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Vídeos/Canciones</title>
+            <link href="estilo.css"  rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="./css/bootstrap.min.css" rel="stylesheet">
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <link rel="shortcut icon" href="./img/prueba2.ico"/>
+            <style type="text/css">
+                body{
+                    background-color:black;
+                    color:white;
+                    /* padding-top: 73px; */
+                }
+            </style>
+        </head>
+        <body>
+            <!-- CABECERA DE LA PÁGINA WEB -->
+            <header id="barraNavega">
+                <div class="container-fluid">
+                    <div class="row foot2">
+                        <ul class="nav">
+                            <li class="nav-item me-auto ms-2 d-none d-xl-block"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:125px" class="rounded-2"></a></li>
+                            <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li>
+                            <li class="nav-item text-center pt-2 text-white">
+                                <img src="img/fondo.jpg" style="width:75%" class="d-none d-md-block d-lg-none text-center mx-auto">
+                                <img src="img/fondo.jpg" style="width:85%" class="d-block d-md-none d-lg-block text-center mx-auto">
+                            </li>
+                            <div class="w-100 d-block d-md-none"></div>
+                            <li class="nav-item ms-auto d-none d-xl-block">
+                                <a class="nav-link" href="#"><img src="img/prueba.png" style="width:125px"></a>
+                            </li>
+                            <!-- <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li> -->
+                        </ul>
+                    </div>
+                        <!-- <a class="navbar-brand col-auto" href="#"> -->
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-dark sticky-top navegar mt-2">
+                    <div class="container-fluid">
+                        <!-- LOGO -->
+                        <!-- <a href="#" class="navbar-brand text-light fw-bold me-auto">
+                            <img src="./img/prueba.png" style="width:60px" class="img-fluid">
+                        </a>
+                 -->
+                        <!-- BOTON TOGGLER -->
+                        <button class="navbar-toggler ms-auto text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <!-- ENLACES -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                            <ul class="navbar-nav menuNav">
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="index.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house-fill text-warning"></i>&nbsp; Inicio</a>
+                                </li>
+                                <li class="nav-item pe-1 me-1">
+                                    <a class="nav-link text-light fw-bold me-3 ms-3" href="resumenTemporada.html"><i class="bi bi-mortarboard-fill text-warning"></i>&nbsp; Resumen</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-puzzle-fill text-warning"></i>&nbsp; Aclaraciones</a>
+                                    <div class="dropdown-content aclara">
+                                        <a href="explicacion.html">Explicación</a>
+                                        <a href="final.html">Final</a>
+                                        <a href="simbologia.html">Simbología</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-people-fill text-warning"></i>&nbsp; Personajes</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-images text-warning"></i>&nbsp; Galería</a>
+                                    <div class="dropdown-content galer">
+                                        <a href="galeria.html">Imágenes</a>
+                                        <a href="videos.html">Vídeos</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="recomendacion.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-pencil-fill text-warning"></i>&nbsp; Recomendaciones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="contenido">
+                <div class="container-fluid" id="carro">
+                    <!-- EJEMPLO DE CAROUSEL -->
+                    <div id="ejemplo-carousel" class="carousel slide mb-4 col-10 mx-auto" data-bs-ride="carousel">
+                      <!-- Primera parte con las imágenes de la presentación -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="img/Carousel/carousel2.jpg" alt="Fachada" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/Carousel1.jpg" alt="Patio Infantil" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/carousel3.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel4.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel5.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel6.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                      </div>
+                      <!-- Segunda parte con los controles derecha e izquierda -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </button>
+                      <!-- Tercera parte con los indicadores -->
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="3"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="4"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="5"></button>
+                      </div>
+                    </div>
+                </div>
+                <main class="col-xs-12 col-md-10 col-lg-11 col-xl-12 order-2 mx-auto">
+                    <div class="container-fluid mx-auto">
+                        <div class="col-12 mx-auto">
+                            <h1 class="text-center mb-4 servi">Vídeos / Canciones</h1>
+                        </div>
+                        <div class="col-9 mx-auto">
+                            Una de las cosas que más se destaca de la serie, más allá de su increíble trama, es la banda sonora. La música que utilizaron para acompañar cada momento fue elegida con sumo cuidado y los resultados fueron excelentes.
+                        </div>
+                        <div class="col-9 mx-auto mt-4">
+                            <div class="row mx-auto">
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">GOODBYE - APPARAT - Canción de introducción</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-9 mx-auto" src="https://www.youtube.com/embed/66VnOdk6oto?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">NENA - IRGENDWIE IRGENDWO IRGENDWANN</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/oMHLkcc9I9c?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Mimi Page - Nightfall</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/-sn8mF4hwpw?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Me and the Devil - Soap&Skin</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/89o-Ew27yUA?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">What a Wonderfull World - Soap and Skin</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/1Hgw445fffY?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">When I Was Done Dying - Dan Deacon</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/PZqUprA6bKE?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Cow Song - Meredith Mink & Collin Walcott</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/SSaB8mIWee4?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Industry - Mire Kay</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/pxa99xmquKE?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Peter Gabriel – “My Body Is A Cage”</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/Oo1ZLyrrMuY?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Bonaparte – “Melody X”</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/MMwdP-U4qk4?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Agnes Obel – “It’s Happening Again”</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/G11dbfiNv10?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Keep the Streets Empty For Me - Fever Ray</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/jWFb5z3kUSQ?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Enter One - Sol Seppy</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/fEw_pyK--D4?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Wishing Well - Stomper</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/QOAFr61SXpc?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Familiar - Agnes Obel</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/iMwdTDWXe_k?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">A Quiet Life - Teho Teardo & Blixa Bargeld</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/wQ2JntChyEc?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">You Spin my Round - Dead or Alive</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/kIrLaccydww?controls=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto" style="margin-bottom: 20px;">
+                                    <p style="font-size:1.2em;font-weight:bold">Shout - Tears for Fears</p>
+                                    <div class="ratio ratio-16x9 mx-auto mb-4">
+                                        <iframe class="col-12 mx-auto" src="https://www.youtube.com/embed/Ye7FKc1JQe4?controls=1"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            <div class="container-fluid">
+                <div class="row mt-4 mt-sm-5 mt-md-5 foot">
+                    <div class="col-9 mx-auto mt-2">
+                        <footer class="row mx-auto">
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Información</h4>
+                                <div class="pb-2 ps-1"><a href="https://es.wikipedia.org/wiki/Dark_(serie_de_televisi%C3%B3n)" target="_blank">Wikipedia</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.netflix.com/es/title/80100172" target="_blank">Página Oficial Netfilx</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.filmaffinity.com/es/film103430.html" target="_blank">Film Affinity</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.sensacine.com/series/serie-20328/" target="_blank">SensaCine</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Explicación</h4>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=6P3ZALooCd4" target="_blank">Temporadas</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=Jexrg8k9-vU" target="_blank">Análisis</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=KWAQSU2rmAQ" target="_blank">Antes de todo</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3 mx-auto ">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Redes Sociales</h4>
+                                <div class="redes-sociales">
+                                    <div class="pb-0"><a href="https://www.facebook.com/netflixespana/" target="_blank" class="facebook"><i class="bi bi-facebook text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://twitter.com/netflix" target="_blank" class="twitter" class="twitter"><i class="bi bi-twitter text-white text-center mx-auto"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.instagram.com/netflixes/" target="_blank" class="instagram"><i class="bi bi-instagram text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.youtube.com/Netflix" target="_blank" class="gmail"><i class="bi bi-youtube text-white"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 align-self-center mx-auto text-center">
+                                <a href="#" class="oler ms-5"><img src="img/prueba1.png" class="img-fluid mx-auto text-center" style="width:100%"></a>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="container-fluid">
+                        <footer class="row text-center foo2">
+                            <div class="col-12 pt-2 pb-4">
+                                <div>Dafne Jiménez López&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:dafne.jimenez.lopez@gmail.com">dafne.jimenez.lopez@gmail.com</a> </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia Doppler</title>
+    <link href="../estilo.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../img/prueba2.ico"/>
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            background-color:#212529;
+            color:white;
+        }
+      </style>
+</head>
+<body>
+
+  <div class="alert alert-info alert-dismissible alert-small fade show text-center fw-bold fs-5 mb-0">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <i class="bi bi-info-circle-fill"></i>&nbsp; PARA MÁS INFORMACIÓN PULSAR ENCIMA DEL NOMBRE DEL PERSONAJE.
+  </div> 
+
+  <!-- CABECERA DE LA PÁGINA WEB -->
+  <header class="mt-0">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top navegar">
+        <div class="container-fluid">
+
+            <!-- BOTON TOGGLER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ENLACES -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                <div class=" d-block d-md-none">
+                  <ul class="navbar-nav menuNav">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas1">Charlotte</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna1">Peter</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#mikkel1">Franciska</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#ines1">Elisabeth</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#helge1">Helge</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#bernd1">Bernd</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#greta1">Greta</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="d-none d-md-block">
+                  <ul class="navbar-nav menuNav ">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas">Charlotte</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna">Peter</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#mikkel">Franciska</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#ines">Elisabeth</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#helge">Helge</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#bernd">Bernd</a>
+                    </li>
+                    <li class="navbar-item pe-1">
+                      <a class="nav-link text-light fw-bold me-3 ms-3" href="#greta">Greta</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="parallaxCharlotte d-none d-md-block"><a name="jonas">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text">Charlotte</div>
+    </a></a>
+  </div>
+
+  <div class="parallaxCharlotteMV d-block d-md-none"><a name="jonas1">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text">Charlotte</div>
+    </a></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxPeter d-none d-md-block"><a name="hanna">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPeter">
+      <div class="text">Peter</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallaxPeterMV d-block d-md-none"><a name="hanna1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPeter">
+      <div class="text">Peter</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+      
+  <div class="parallaxFranciska d-none d-md-block"><a name="mikkel">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalFranziska">
+      <div class="text3">Franziska Doppler</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallaxFranciskaMV d-block d-md-none"><a name="mikkel1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalFranziska">
+      <div class="text3">Franziska Doppler</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxEli d-none d-md-block"><a name="ines">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalEli">
+      <div class="text3">Elisabeth Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxEliMV d-block d-md-none"><a name="ines1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalEli">
+      <div class="text3">Elisabeth Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxHelge d-none d-md-block"><a name="helge">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHelge">
+      <div class="text3">Helge Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxHelgeMV d-block d-md-none"><a name="helge1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHelge">
+      <div class="text3">Helge Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxBernd d-none d-md-block"><a name="bernd">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalBernd">
+      <div class="text3">Bernd Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxBerndMV d-block d-md-none"><a name="bernd1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalBernd">
+      <div class="text3">Bernd Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <div class="parallaxGreta d-none d-md-block"><a name="greta">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGreta">
+      <div class="text3">Greta Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="parallaxGretaMV d-block d-md-none"><a name="greta1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGreta">
+      <div class="text3">Greta Doppler</div>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>
+
+  <!-- Ventana Modal Jonas -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Charlotte</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent; font-size:17px;">
+                Interpretada por Stephanie Amarell (1986) y Karoline Eichhorn (2019).
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#jonasA" data-bs-toggle="tab">Mundo de Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#jonasO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#jonasE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="jonasA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Está casada con Peter, aunque su matrimonio está prácticamente roto. Asimismo, es madre de Franziska y Elisabeth. Trabaja como jefa de policía en la comisaría de Winden junto a Ulrich Nielsen. Charlotte desconoce quiénes son sus padres ya que fue criada por su abuelo adoptivo H.G. Tannhaus, el relojero que creó la máquina del tiempo. Finalmente descubre que su verdadero padre es el misterioso Noah y Elisabeth.</p>
+                    </div>
+                    <div id="jonasE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>Es la ex mujer de Peter, con quien tiene dos hijas, Franziska y Elisabeth. Aquí mantiene una relación con Ulrich, su compañero de trabajo.</p>
+                    </div>
+                    <div id="jonasO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>No existe</p>
+                    </div>
+                  </div>
+                <!-- <a href="prueba.html">Volver a la pantalla de personajes</a> -->
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Peter-->
+  <div class="modal fade" id="modalPeter">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Peter</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                Stephan Kampwirth da vida al esposo de Charlotte con la que tiene dos hijas, Franziska y Elisabeth.
+                
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#peterA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#peterO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#peterE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="peterA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Es el psicólogo de Jonas y el hijo de Helge Doppler. Descubre que es homosexual lo que hace mella en su matrimonio. Está casado con Charlotte.</p>
+                    </div>
+                    <div id="peterE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>Es párroco y es el ex esposo de Charlotte, con ella tiene dos hijas.</p>
+                    </div>
+                    <div id="peterO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>Es amigo de Regina, Hannah y Katharina.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Franceska-->
+  <div class="modal fade" id="modalFranziska">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Franziska </h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                Gina Stiebitz (2019) encarna a Franziska, la hija mayor del matrimonio Doppler y hermana de Elisabeth.
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba ">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#FranziskaA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#FranziskaO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#FranziskaE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="FranziskaA" class="container tab-pane active"><br>
+                        <h4>Mundo de Adam</h4>
+                        <p>Es la compañera de clase de Magnus Nielsen con el que mantiene una relación amorosa.</p>
+                    </div>
+                    <div id="FranziskaE" class="container tab-pane fade"><br>
+                        <h4>Mundo de Eva</h4>
+                        <p>La joven es sorda y también aquí mantiene una relación con Magnus.</p>
+                    </div>
+                    <div id="FranziskaO" class="container tab-pane fade"><br>
+                        <h4>Origen</h4>
+                        <p>No existe.</p>
+                    </div>
+                  </div>
+                <!-- <a href="prueba.html">Volver a la pantalla de personajes</a> -->
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Ines-->
+  <div class="modal fade" id="modalEli">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Elisabeth</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                Elisabeth, interpretada por Carlotta von Falkenhayn (2019) y Sandra Borgmann (2053), es madre e hija de Charlotte Doppler.
+                
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#eliA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#eliO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#eliE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="eliA" class="container tab-pane active"><br>
+                        <h2 class="mb-3">Mundo de Adam</h2>
+                        <p>Es una de las pocas que sobrevive al apocalipsis de 2020. Casi mata a Jonas en 2052. Es sorda.</p>
+                    </div>
+                    <div id="eliE" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Mundo de Eva</h2>
+                        <p>En este mundo la joven Elisabeth no es sorda.</p>
+                    </div>
+                    <div id="eliO" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Origen</h2>
+                        <p>No existe.</p>
+                    </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Helge-->
+  <div class="modal fade" id="modalHelge">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Helge</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                Tom Philipp (1952), Peter Schneider (1986) y Herman Beyer (2019) dan vida al padre de Peter, suegro de Charlotte e hijo de Greta Doppler.
+                
+                <div class="container mt-4">
+                  <ul class="nav nav-tabs nav-justified prueba">
+                    <li class="nav-item">
+                        <a class="nav-link active prueba2" href="#helgeA" data-bs-toggle="tab">Mundo Adam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link prueba2" href="#helgeO" data-bs-toggle="tab">Origen</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link prueba2" href="#helgeE" data-bs-toggle="tab">Mundo Eva</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="tab-content text-start">
+                    <div id="helgeA" class="container tab-pane active"><br>
+                        <h2 class="mb-3">Mundo de Adam</h2>
+                        <p>En 2019, Helge vive en un geriátrico y parece estar loco, frecuentemente sale al bosque para alertar de los extraños viajes en el tiempo aunque, al principio, nadie le hace caso. De niño es arrastrado por Noah, que hace junto a él extraños experimentos relacionados con los viajes por diferentes épocas. Tiene una cicatriz en la oreja que le hizo Ulrich Nielsen.</p>
+                    </div>
+                    <div id="helgeE" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Mundo de Eva</h2>
+                        <p>Vive con su hijo Peter y tiene una cicatriz en el ojo izquierdo que le hizo Ulrich Nielsen en 1986.</p>
+                    </div>
+                    <div id="helgeO" class="container tab-pane fade"><br>
+                        <h2 class="mb-3">Origen</h2>
+                        <p>Aunque no aparece de forma explicita en la última escena, su hijo Peter existe, por tanto el también.</p>
+                    </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Bernd-->
+  <div class="modal fade" id="modalBernd">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Bernd</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                Anatole Taubman (1952) y Michael Mendl (1986) interpretan a Bernd, el fundador de la planta nuclear de Winden y también el padre de Helge. Este personaje aparece en el mundo de Adam. Al final de la temporada tres se da a entender que Bernd es también padre de Regina Tiedemman.
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Bernd-->
+  <div class="modal fade" id="modalGreta">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h3 class="modal-title">Greta</h3>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-center" style="background-color:transparent;font-size:17px;">
+                La actriz Cordelia Wege da vida a la esposa de Bernd Doppler y madre de Helge, a quien trata de educar de manera estricta y disciplinada, ya que no confía mucho en él. Este personaje aparece solo en el mundo de Adam.
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

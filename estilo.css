@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.contenido{
+  background-image: url(img/fondo1.jpg);
+}
+
+/* BARRA DE NAVEGACION */
+.navegar{
+    background: -moz-linear-gradient(top, rgb(0, 0, 0), rgb(42, 42, 42));
+    background: -webkit-linear-gradient(top,rgb(0, 0, 0), rgb(42, 42, 42)); 
+    color:white;
+    font-size: 1.1em;
+}
+
+.foot{
+  background: -moz-linear-gradient(bottom, rgb(0, 0, 0), rgb(48, 48, 48));
+  background: -webkit-linear-gradient(bottom,rgb(0, 0, 0), rgb(48, 48, 48)); 
+  color:white;
+  font-family: 'Open sans', 'sans-serif';
+}
+
+.foot2{
+  background-color: black;
+}
+
+nav div ul{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+}
+
+nav div ul li a:hover{
+  border-bottom: 4px solid yellow;
+}
+
+.perfil-img{
+    width:60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.perfil-img img{width: 100%; height: 100%;object-fit: center;}
+.perfil{
+    display:flex;
+    align-items: center;
+}
+.name-user{
+    display:flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: white;
+    font-size: 1.3em;
+}
+.name-user small{
+    color: rgb(195, 195, 195);
+    font-size: 0.8em;
+}
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comentarios_clientes{
+    color:white;
+}
+
+.checked {
+    color: orange;
+}
+
+/* MENU DE TABS */
+.prueba {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #070707;
+    color:yellow !important;
+}
+
+/* BOTÓN DENTRO DEL TAB */
+.prueba2 {
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:yellow !important;
+}
+
+.prueba2:hover, .prueba2.active:hover{
+    color:yellow;
+    background-color: #212529 !important;
+}
+
+.prueba2.active{
+    color: yellow !important;
+    background-color: #2a2a2a !important;
+}
+
+/* PERSONAJES */
+.parallax,.parallax2,.parallax3,.parallax4,.parallax5, .parallax6, .parallax7, .parallax8,.parallaxGaus,.parallaxGausM,.parallaxH, .parallaxHM, .parallax9, .parallax10
+.parallaxUlrich,.parallaxUlrichMV,.parallaxKatharina,.parallaxKatharinaMV,.parallaxMartha,.parallaxMarthaMV,.parallaxMagnus,.parallaxMagnusMV,.parallaxJana,.parallaxJanaMV
+,.parallaxTronte,.parallaxTronteMV,.parallaxAgnes,.parallaxAgnesMV,.parallaxNoah,.parallaxNoahMV, .parallaxCharlotte, .parallaxCharlotteMV,.parallaxPeter,.parallaxPeterMV
+,.parallaxFranciska,.parallaxFranciskaMV,.parallaxEli,.parallaxEliMV,.parallaxHelge,.parallaxHelgeMV,.parallaxBernd,.parallaxBerndMV,.parallaxGreta,.parallaxGretaMV
+,.parallaxRegina,.parallaxReginaMV,.parallaxAlexander,.parallaxAlexanderMV,.parallaxBartos,.parallaxBartosMV,.parallaxClaudia,.parallaxClaudiaMV,.parallaxEgon
+,.parallaxEgonMV,.parallaxDoris,.parallaxDorisMV,.parallaxSilja,.parallaxSiljaMV{
+    /* Imagen que se usa */
+    background-image: url('img/Familias/Familia1/1.jpg');
+
+    /* MÁXIMA ALTURA */
+    height: 100%; 
+    width: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    filter: opacity(100%);
+}
+.parallax2{ background-image: url('img/Familias/Familia1/2.jpg');}
+.parallax3{ background-image: url('img/Familias/Familia1/3.jpg');}
+.parallax4{ background-image: url('img/Familias/Familia1/jonas.jpg');}
+.parallax5{ background-image: url('img/Familias/Familia1/hanna.png');}
+.parallax6{ background-image: url('img/Familias/Familia1/mikkel.jpg');}
+.parallax7{ background-image: url('img/Familias/Familia1/ines.jpg');}
+.parallax8{ background-image: url('img/Familias/Familia1/4.jpg');}
+.parallaxGaus{ background-image: url('img/Familias/Familia5/2.jpg');}
+.parallaxGausM{ background-image: url('img/Familias/Familia5/1.jpg');}
+.parallaxH{ background-image: url('img/Familias/Familia5/inicio.png');}
+.parallaxHM{ background-image: url('img/Familias/Familia5/h.jpg');}
+.parallax9{ background-image: url('img/Familias/Familia5/desconocido.jpg');}
+.parallax10{ background-image: url('img/Familias/Familia5/des.jpg');}
+.parallaxUlrichMV{background-image: url('img/Familias/Familia2/2.jpg');}
+.parallaxKatharina{background-image: url('img/Familias/Familia2/3.jpg');}
+.parallaxKatharinaMV{background-image: url('img/Familias/Familia2/4.jpg');}
+.parallaxMartha{background-image: url('img/Familias/Familia2/5.jpg');}
+.parallaxMarthaMV{background-image: url('img/Familias/Familia2/6.jpg');}
+.parallaxMagnus{background-image: url('img/Familias/Familia2/7.jpg');}
+.parallaxMagnusMV{background-image: url('img/Familias/Familia2/8.jpg');}
+.parallaxJana{background-image: url('img/Familias/Familia2/9.jpg');}
+.parallaxJanaMV{background-image: url('img/Familias/Familia2/10.jpg');}
+.parallaxTronte{background-image: url('img/Familias/Familia2/11.jpg');}
+.parallaxTronteMV{background-image: url('img/Familias/Familia2/12.jpg');}
+.parallaxAgnes{background-image: url('img/Familias/Familia2/13.jpg');}
+.parallaxAgnesMV{background-image: url('img/Familias/Familia2/14.jpg');}
+.parallaxNoah{background-image: url('img/Familias/Familia2/15.jpg');}
+.parallaxNoahMV{background-image: url('img/Familias/Familia2/16.jpg');}
+.parallaxCharlotte{background-image: url('img/Familias/Familia3/1.jpg');}
+.parallaxCharlotteMV{background-image: url('img/Familias/Familia3/2.jpg');}
+.parallaxPeter{background-image: url('img/Familias/Familia3/3.jpg');}
+.parallaxPeterMV{background-image: url('img/Familias/Familia3/4.jpg');}
+.parallaxFranciska{background-image: url('img/Familias/Familia3/5.jpg');}
+.parallaxFranciskaMV{background-image: url('img/Familias/Familia3/6.jpg');}
+.parallaxEli{background-image: url('img/Familias/Familia3/7.jpg');}
+.parallaxEliMV{background-image: url('img/Familias/Familia3/8.jpg');}
+.parallaxHelge{background-image: url('img/Familias/Familia3/9.jpg');}
+.parallaxHelgeMV{background-image: url('img/Familias/Familia3/10.jpg');}
+.parallaxBernd{background-image: url('img/Familias/Familia3/11.jpg');}
+.parallaxBerndMV{background-image: url('img/Familias/Familia3/12.jpg');}
+.parallaxGreta{background-image: url('img/Familias/Familia3/13.jpg');}
+.parallaxGretaMV{background-image: url('img/Familias/Familia3/13.jpg');}
+.parallaxRegina{background-image: url('img/Familias/Familia4/1.1.jpg');}
+.parallaxReginaMV{background-image: url('img/Familias/Familia4/2.jpg');}
+.parallaxAlexander{background-image: url('img/Familias/Familia4/3.jpg');}
+.parallaxAlexanderMV{background-image: url('img/Familias/Familia4/4.jpg');}
+.parallaxBartos{background-image: url('img/Familias/Familia4/5.jpg');}
+.parallaxBartosMV{background-image: url('img/Familias/Familia4/6.jpg');}
+.parallaxClaudia{background-image: url('img/Familias/Familia4/7.jpg');}
+.parallaxClaudiaMV{background-image: url('img/Familias/Familia4/8.jpg');}
+.parallaxEgon{background-image: url('img/Familias/Familia4/9.jpg');}
+.parallaxEgonMV{background-image: url('img/Familias/Familia4/10.jpg');}
+.parallaxDoris{background-image: url('img/Familias/Familia4/11.jpg');}
+.parallaxDorisMV{background-image: url('img/Familias/Familia4/11.jpg');}
+.parallaxSilja{background-image: url('img/Familias/Familia4/12.jpg');}
+.parallaxSiljaMV{background-image: url('img/Familias/Familia4/13.jpg');}
+
+/* TEXTO PERSONAJES */
+.text, .text1, .text2, .text3{
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  width: 25%;
+  letter-spacing: 1px;
+  text-align: center; /* Texto Centrado */
+  position: absolute; /* Posicion del Texto */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen; /* Poder poner el texto encima de la imagen */
+}
+.text1{
+  width: 30%;
+}
+.text2{
+  width: 35%;
+}
+.text3{
+  width: 32%;
+}
+.texto{
+  padding:20px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.contacto{
+  background-color: #dadada;
+}
+
+/* TARJETAS PERSONAJES */
+.container3 {
+position: relative;
+}
+
+.container3 img {vertical-align: middle;}
+
+.container3 .content {
+position: absolute;
+bottom: 0;
+/* background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.25);  */
+color: #f1f1f1;
+/* width: 97%; */
+padding: 20px;
+}
+
+.container3 a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: yellow;
+}
+
+.container3 a:hover{
+    color: rgb(108, 108, 0);
+}
+
+/* BOTON DE LA BARRA DE NAVEGACION */
+.dropbtn {
+  color: white;
+  padding: 8px;
+  border: none;
+}
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.aclara, .galer {
+  display: none;
+  position: absolute;
+  background-color: #212529;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  /* width: 178px; */
+  width: 196px;
+  font-family: 'Rubik', 'sans-serif';
+}
+
+.galer {
+  /* width: 128px; */
+  width:141px;
+}
+
+.aclara a, .galer a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.aclara a:hover,.galer a:hover  {background-color: #3d3d3d;color:white;}
+
+.dropdown:hover .aclara,.dropdown:hover .galer {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(180, 180, 0);}
+
+/* PASO DE PAGINAS */
+.pagination{
+  float:right;
+  margin-bottom: 20px;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: rgb(180, 180, 0);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: rgb(179, 179, 179);}
+
+/* ELEMENTOS DESAPARECIDOS */
+#more,#more1,#more2,#more3,#more4,#more5,#more6,#more7,#more8,#more9,#more10{display: none;}
+#alertas,#alertas1{display:none;}
+
+/* TARJETAS */
+.card h2{
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  color:rgb(180, 180, 0);
+  font-size: 2.4em;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+/* TEXTOS */
+.servi{
+  letter-spacing: 2px;
+  /* color:rgb(255, 255, 0); */
+  color:rgb(255, 255, 124);
+  font-size: 3.4em;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.texto{
+  color: rgb(206, 206, 19);
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer a{
+  text-decoration: none;
+  color:white;
+}
+
+footer a:hover{
+  color:white;
+  border-bottom:2px solid yellow;
+}
+
+footer .oler:hover{
+  color:white;
+  border: 0px;
+}
+
+a.instagram:hover{
+  background-color: rgb(185, 3, 124);
+}
+
+a.facebook:hover{
+  background-color: rgb(14, 0, 139);
+}
+
+a.twitter:hover{
+  background-color: rgb(0, 83, 139);
+}
+
+a.gmail:hover{
+  background-color: rgb(132, 0, 0);
+}
+
+.redes-sociales div a{
+  display: block;
+  padding: 0 10px;
+  padding-bottom: 4px;
+  padding-left: -8px;
+  padding-right: 10px;
+  line-height: 50px;
+  font-size: 30px;
+  transition: .2s;
+  color:white;
+  width: 50px;
+}
+
+.redes-sociales{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-sociales div{
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.row {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgb(39, 39, 39);
+  border:1px solid black;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  justify-content: center;
+  /* max-width: 1600px; */
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor:pointer;
+}
+
+/* Next & previous buttons */
+.prev,.next,.pequenoDer,.pequenoIzq {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.pequenoDer,.pequenoIzq {
+  top: 43%;
+}
+
+/* Position the "next button" to the right */
+.next, .pequenoDer{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover,.pequenoDer:hover,.pequenoIzq:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  padding-top: 15px;
+}
+
+.demo {
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(0.95) rotate(1deg);
+  opacity: .5;
+  cursor: zoom-in;
+}
+
+.enlace{
+  text-decoration: none;
+  color:rgb(195, 195, 26);
+}
+.enlace:hover{
+  color:rgb(255, 255, 118);
+}
+
+.pensativo, .pensativo1{
+  color:#3d3d3d !important;
+}
+.pensativo1{
+  font-size: 0.7em !important;
+  font-weight: normal;
+}

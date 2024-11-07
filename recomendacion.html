@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Recomendaciones</title>
+            <link href="estilo.css"  rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="./css/bootstrap.min.css" rel="stylesheet">
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <link rel="shortcut icon" href="./img/prueba2.ico"/>
+            <style type="text/css">
+                body{
+                    background-color:black;
+                    color:white;
+                    /* padding-top: 73px; */
+                }
+
+                .card{
+                    background-color: #191b1d;
+                    color:white;
+                    border: 0px solid #212529;
+                }
+
+                .card-footer{
+                    border: 0px solid #212529;
+                }
+                .boton1 {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .reseñas .corazon,.reseñas .enviar{
+                    margin-left: 14px;
+                    position: relative;
+                    top: 2px;
+                    color: #A6A6A6;
+                    cursor: pointer;
+                    -webkit-transition: color 0.3s ease;
+                    -o-transition: color 0.3s ease;
+                    transition: color 0.3s ease;
+                }
+                .reseñas .corazon:hover {
+                    color: red;
+                }
+                .reseñas .enviar:hover {
+                    color: rgb(0, 136, 255);
+                }
+                .carta1,.carta2{
+                    background-color: #dadada;
+                }
+                .carta1{
+                    border-radius: 0px 20px 20px 20px;
+                }
+                .carta2{
+                    border-radius: 20px 0px 20px 20px;
+                }
+                #texto1 {display:none;color:red}
+            </style>
+        </head>
+        <body>
+            <!-- CABECERA DE LA PÁGINA WEB -->
+            <header>
+
+                <div class="container-fluid">
+                    <div class="row foot2">
+                        <ul class="nav">
+                            <li class="nav-item me-auto ms-2 d-none d-xl-block"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:125px" class="rounded-2"></a></li>
+                            <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li>
+                            <li class="nav-item text-center pt-2 text-white">
+                                <img src="img/fondo.jpg" style="width:75%" class="d-none d-md-block d-lg-none text-center mx-auto">
+                                <img src="img/fondo.jpg" style="width:85%" class="d-block d-md-none d-lg-block text-center mx-auto">
+                            </li>
+                            <div class="w-100 d-block d-md-none"></div>
+                            <li class="nav-item ms-auto d-none d-xl-block">
+                                <a class="nav-link" href="#"><img src="img/prueba.png" style="width:125px"></a>
+                            </li>
+                            <!-- <li class="nav-item me-auto ms-2 d-none d-lg-block d-xl-none"><a class="nav-link" href="#"><img src="./img/prueba.png" alt="Vega Media" style="width:80px" class="rounded-2"></a></li> -->
+                        </ul>
+                    </div>
+                        <!-- <a class="navbar-brand col-auto" href="#"> -->
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-dark sticky-top navegar mt-2">
+                    <div class="container-fluid">
+                        <!-- LOGO -->
+                        <!-- <a href="#" class="navbar-brand text-light fw-bold me-auto">
+                            <img src="./img/prueba.png" style="width:60px" class="img-fluid">
+                        </a>
+                 -->
+                        <!-- BOTON TOGGLER -->
+                        <button class="navbar-toggler ms-auto text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <!-- ENLACES -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                            <ul class="navbar-nav menuNav">
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="index.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house-fill text-warning"></i>&nbsp; Inicio</a>
+                                </li>
+                                <li class="nav-item pe-1 me-1">
+                                    <a class="nav-link text-light fw-bold me-3 ms-3" href="resumenTemporada.html"><i class="bi bi-mortarboard-fill text-warning"></i>&nbsp; Resumen</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-puzzle-fill text-warning"></i>&nbsp; Aclaraciones</a>
+                                    <div class="dropdown-content aclara">
+                                        <a href="explicacion.html">Explicación</a>
+                                        <a href="final.html">Final</a>
+                                        <a href="simbologia.html">Simbología</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-people-fill text-warning"></i>&nbsp; Personajes</a>
+                                </li>
+                                <li class="navbar-item dropdown pe-1 me-1">
+                                    <a href="#" class="nav-link text-light fw-bold pe-3 ps-3 dropdown-toggle dropbtn" data-bs-toggle="dropdown" id="navbardrop"><i class="bi bi-images text-warning"></i>&nbsp; Galería</a>
+                                    <div class="dropdown-content galer">
+                                        <a href="galeria.html">Imágenes</a>
+                                        <a href="videos.html">Vídeos</a>
+                                      </div>
+                                </li>  
+                                <li class="navbar-item pe-1 me-1">
+                                    <a href="recomendacion.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-pencil-fill text-warning"></i>&nbsp; Recomendaciones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="contenido">
+                <div class="container-fluid">
+                    <!-- EJEMPLO DE CAROUSEL -->
+                    <div id="ejemplo-carousel" class="carousel slide mb-4 col-10 mx-auto" data-bs-ride="carousel">
+                      <!-- Primera parte con las imágenes de la presentación -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="img/Carousel/carousel2.jpg" alt="Fachada" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/Carousel1.jpg" alt="Patio Infantil" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/Carousel/carousel3.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel4.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel5.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Carousel/carousel6.jpg" alt="Campo de fútbol" class="d-block w-100">
+                          </div>
+                      </div>
+                      <!-- Segunda parte con los controles derecha e izquierda -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </button>
+                      <!-- Tercera parte con los indicadores -->
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="2"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="3"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="4"></button>
+                          <button type="button" data-bs-target="#ejemplo-carousel" data-bs-slide-to="5"></button>
+                      </div>
+                    </div>   
+                </div>
+                
+                <div class="container">
+                    <main class="col-xs-12 col-md-12 col-lg-12 order-2 mx-auto">
+                    <div class="container-fluid">
+                        <div class="col-xs-11 col-sm-12 mx-auto">
+                            <h1 class="text-center mb-4 servi">Si te ha gustado Dark te recomiendo:</h1>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 g-4">
+                            <div class="col">
+                                <!-- TARJETA 1 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/1.jpg" alt="Agujero de gusano">
+                                    <div class="card-body carta">
+                                        <h2 class="card-title mb-3">El Perfume (Parfum, 2018)</h2>
+                                        <p class="card-text">Uno de los factores por los que mucho público ha encontrado exótica 'Dark' es su procedencia y flema alemana.</p>
+                                        <span id="dots"></span><span id="more">
+                                            <p class="card-text">
+                                                Esta otra miniserie original de Netflix comparte origen y está inspirado en la película y novela del mismo nombre de 
+                                                Patrick Süskind, pero, en su versión seriada, ‘El Perfume‘ sigue el esquema de nuevos thrillers criminales, con la aparición
+                                                 del cuerpo de una mujer brutalmente asesinada con sus glándulas olfativas eliminadas. 
+                                            </p>
+                                            <p class="card-text">
+                                                La estructura y los flashbacks confusos 
+                                                 recuerdan mucho a los de 'Dark', y como esta, es conveniente verla con lápiz y papel. 
+                                            </p>
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.netflix.com/es/title/80200596">Netflix</a> 
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots'),document.getElementById('more'),document.getElementById('myBtn'))" id="myBtn">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/2.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">12 monos</h2>
+                                        <p class="card-text">
+                                            Si la película '12 monos' (12 monkeys, 1995) es una de las inspiraciones de 'Dark' en su realismo sucio y tono de drama algo nihilista
+                                        </p>
+                                        <span id="dots5"></span><span id="more5">
+                                            <p class="card-text">
+                                                La adaptación de la película del canal Syfy parece delinear la forma en la que las tramas se entrelazan en la 
+                                                serie alemana, desde el romance prohibido a través del tiempo y su narración en bucle y no lineal que acaba con uno de los 
+                                                finales más satisfactorios de la ficción televisiva reciente.  
+                                            </p>                    
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots5'),document.getElementById('more5'),document.getElementById('myBtn5'))" id="myBtn5">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/3.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">Continuum (2012-2015)</h2>
+                                        <p class="card-text">
+                                            Continuum' es una serie de ciencia ficción que, como 'Dark' aborda la dualidad del bien y el mal adentrándose en sus tonos de gris
+                                        </p>
+                                        <span id="dots1"></span><span id="more1">
+                                            <p class="card-text">
+                                                En ella una agente de la ley en un futura distópico corporativo viaja a través del tiempo desde 2077 hasta 2012 y empiezan los problemas para cambiar el futuro y volver a su tiempo. 
+                                            </p>  
+                                            <p class="card-text">
+                                                A lo largo de cuatro temporadas, la serie explora cómo los cambios del pasado afectan el futuro, con elementos comunes a la ficción de Netflix, como la creación de diferentes líneas de tiempo y la aparición de viajeros del tiempo perdidos. Junto a esta, otra infravalorada de viajes en el tiempo es 'Travellers' (2016-2018).
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://ver.movistarplus.es/ficha/continuum-t4/ep-6-la-hora-final/?id=1711656">Movistar +</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots1'),document.getElementById('more1'),document.getElementById('myBtn1'))" id="myBtn1">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/4.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">Twin Peaks (1990-2017)</h2>
+                                        <p class="card-text">
+                                            La obra magna de David Lynch y Mark Frost ha dejado huella en casi cualquier serie de misterio posterior por lo que no es difícil seguir su influencia en 'Dark'
+                                        </p>
+                                        <span id="dots2"></span><span id="more2">
+                                            <p class="card-text">
+                                                Puesto que tenemos el hallazgo de un cuerpo en un pueblo en donde sus habitantes ocultan secretos mientras hay eventos sobrenaturales, fantásticos o de ciencia ficción. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Pasión reconocida de Baran bo Odar y Jantje Friese,'Twin Peaks' fue un fenómeno de los 90 que ha acabado generando una reciente tercera temporada que consiguió volver a dar la vuelta el concepto de ficción televisiva.
+                                            </p>  
+                                            <p class="card-text">
+                                                No disponible en ninguna plataforma, disponible en formato físico en: <a class="enlace" href="https://www.amazon.es/Twin-Peaks-Misterio-Completo-Blu-ray/dp/B01N0XU2H9/ref=sr_1_9?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=twin+peaks&qid=1595246523&sr=8-9&tag=xataka-21">Amazon</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots2'),document.getElementById('more2'),document.getElementById('myBtn2'))" id="myBtn2">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/5.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">'Stranger Things' (2016-)</h2>
+                                        <p class="card-text">
+                                            Pese a que cuando 'Dark' se puso en marcha demostró que no había muchos parecidos, cuando apareció en Netflix se recibió como una prima alemana de 'Stranger Things'.
+                                        </p>
+                                        <span id="dots3"></span><span id="more3">
+                                            <p class="card-text">
+                                                El hecho de ser una serie original de la misma plataforma y tener un punto de partida con niño desaparecido y escenarios de los 80 bastó para relacionarlas. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Y aunque han demostrado ser dos animales muy diferentes, ambas tienen pueblos pequeños con sucesos sobrenaturales, ciencia ficción y terror, por lo que a nadie que le guste una debería perderse la otra. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.netflix.com/es/title/80057281">Netflix</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots3'),document.getElementById('more3'),document.getElementById('myBtn3'))" id="myBtn3">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/6.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">Glitch (2015-2019)</h2>
+                                        <p class="card-text">
+                                            Esta serie australiana invierte el punto de partida de la mayoría de series de misterio.
+                                        </p>
+                                        <span id="dots4"></span><span id="more4">
+                                            <p class="card-text">
+                                                En vez de desapariciones extrañas, hay un inexplicable regreso a la vida de siete personas que habían fallecido recientemente, pero no son zombies sino que gozan de tan buena salud como las personas normales. 
+                                            </p>  
+                                            <p class="card-text">
+                                                El quiz es entender por qué sucede, ya que los siete están conectados de alguna manera y buscan encontrar una verdad en la que están implicada la ciencia ficción y, como 'Dark' tiene un tono enigmático y oscuro.  
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.netflix.com/es/title/80108495">Netflix</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots4'),document.getElementById('more4'),document.getElementById('myBtn4'))" id="myBtn4">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/7.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">The OA (2016-2019)</h2>
+                                        <p class="card-text">
+                                            Una joven que había desaparecido durante 7 años, regresa repentinamente, y se niega a hablar sobre lo que le sucedió durante todos esos años.
+                                        </p>
+                                        <span id="dots6"></span><span id="more6">
+                                            <p class="card-text">
+                                                'The OA' es otro misterio de ciencia ficción adulta y seria que interconecta el drama en su desarrollo lento, que va estableciendo una situación extraña con giros que no se ven venir. 
+                                            </p>  
+                                            <p class="card-text">
+                                                La búsqueda de otras personas desaparecidas atrapadas en otra dimensión le da un toque 'Dark' ineludible y no es una mala opción dentro de Netflix para engancharse a otro enigma fantástico. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.netflix.com/es/title/80044950">Netflix</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots6'),document.getElementById('more6'),document.getElementById('myBtn6'))" id="myBtn6">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/8.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">Chernobyl (2019)</h2>
+                                        <p class="card-text">
+                                            Gran parte de lo relacionado con la central nuclear en Widen, no solo el accidente sino las muchas tramas que suceden en las oficinas e instalaciones
+                                        </p>
+                                        <span id="dots7"></span><span id="more7">
+                                            <p class="card-text">
+                                                Y el posterior dibujo de un invierno nuclear del apocalipsis que plantea 'Dark' tienen mucho en común con el desastre real de Chernóbil, algo que en Alemania no solo no se toma a broma sino que marca mucho de su flujo económico en torno a las renovables. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Además, la serie de HBO tiene un planteamiento y una puesta en escena lindante con la ciencia ficción, casi de foma más acentuada que la ficción de Netflix. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.hbomax.com/es/es?utm_id=1011l5669&utm_source=afiliacionwebedia&utm_medium=affiliate&clickref=1101lwtIv96g">HBO</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots7'),document.getElementById('more7'),document.getElementById('myBtn7'))" id="myBtn7">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/9.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">The Missing (2014- 2016)</h2>
+                                        <p class="card-text">
+                                            Una de las mejores series europeas de la década pasada y, probablemente con parte de culpa en el tono oscuro y lóbrego de 'Dark'.
+                                        </p>
+                                        <span id="dots8"></span><span id="more8">
+                                            <p class="card-text">
+                                                Con la que comparte el punto de partida con la desaparición de un niño en Francia, cuando se encontraba de viaje por el país con su familia y el hecho de, pese a no tener elementos fantásticos.
+                                            </p>  
+                                            <p class="card-text">
+                                                Está contada en dos momentos del tiempo, el pasado y el presente, ocho años después de los eventos. Su segunda temporada es aún mejor. 
+                                            </p>  
+                                            <p class="card-text">
+                                                Disponible en: <a class="enlace" href="https://www.primevideo.com/detail/amzn1.dv.gti.dcaddb14-8730-cade-86b8-1d586835c2a8?ie=UTF8&linkCode=xm2&tag=just0a7-21?tag=xtkbountievideo-21">Amazon Prime</a> 
+                                            </p>                 
+                                        </span>
+                                    </div>
+                                    <div class="card-footer ms-auto mb-2">
+                                        <button class="btn btn-warning" onclick="funcion1(document.getElementById('dots8'),document.getElementById('more8'),document.getElementById('myBtn8'))" id="myBtn8">Leer Más</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- TARJETA 2 -->
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/recomendacion/11.jpg" alt="Autobus">
+                                    <div class="card-body">
+                                        <h2 class="card-title mb-3">1899</h2>
+                                        <p class="card-text">
+                                            En 1899, cuando unos misteriosos sucesos cambian el rumbo de un barco de inmigrantes en ruta a Nueva York, sus pasajeros se ven arrastrados a un enigma desconcertante.
+                                        </p>
+                                        <p class="card-text">
+                                            Disponible en: <a class="enlace" href="https://www.netflix.com/es/title/80214497">Netflix</a> 
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                </div>
+    
+                <div class="container-fluid mt-4">
+                    <div class="col-10 mx-auto text-end">
+                        <button type="button" class="btn btn-light boton1 rounded-5 position-relative" data-bs-toggle="offcanvas" data-bs-target="#demo" style="font-size:20px">
+                            <i class="bi bi-chat-left-dots-fill"></i> <span class="badge rounded-pill bg-warning text-dark position-absolute top-0 start-100 translate-middle">+2</span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" id="demo">
+                            <div class="offcanvas-header bg-warning text-black">
+                                <button type="button" class="btn mt-1" onclick="enviar()" data-bs-dismiss="offcanvas" style="font-size: 20px"><i class="bi bi-arrows-angle-contract text-white"></i></button>
+                                <div class="offcanvas-title">
+                                    <div class="btn d-flex gap-3 justify-content-center mt-2">
+                                        <img src="img/avatar.png" alt="Google" style="width: 60px" class="img-fluid rounded-5">
+                                        <h5 class="pt-3 text-white fw-bold text-black">Dafne Jimenez</h5>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn mt-1" data-bs-dismiss="offcanvas" style="font-size: 20px"><i class="bi bi-x-lg text-white"></i></button>
+                            </div>
+                            <div class="offcanvas-body bg-dark text-white">
+                                <div class="card h-40 mx-auto" style="background-color:#212529;">
+                                    <div class="card-body text-center carta1">
+                                        <div class="caja-top text-start">
+                                            <div class="perfil">
+                                                <div class="perfil-img">
+                                                    <img src="img/avatar.png" alt="usuario2">
+                                                </div>
+                                                <div class="name-user">
+                                                    <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                                    <small class="pensativo text-start">Hace 3 minutos</small>
+                                                </div>
+                                            </div>
+                                            <div class="reseñas">
+                                                <i class="fa fa-reply enviar"></i>
+                                                <i class="fa fa-heart corazon"></i>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="comentarios_clientes text-start text-black">
+                                            Bienvenido al chat en línea, a través de aquí podrás ponerte en contacto con nosotros acerca de alguna duda que te haya quedado.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card h-40 mx-auto mt-3" style="background-color:#212529;">
+                                    <div class="card-body text-center carta1">
+                                        <div class="caja-top text-start">
+                                            <div class="perfil">
+                                                <div class="perfil-img">
+                                                    <img src="img/avatar.png" alt="usuario2">
+                                                </div>
+                                                <div class="name-user">
+                                                    <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                                    <small class="pensativo text-start">Hace 1 minutos</small>
+                                                </div>
+                                            </div>
+                                            <div class="reseñas">
+                                                <i class="fa fa-reply enviar"></i>
+                                                <i class="fa fa-heart corazon"></i>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="comentarios_clientes text-start text-black">
+                                            Para poder contactar debes introducir tu número de teléfono o email para que podamos escribirte con la menor brevedad posible.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card h-40 mx-auto mt-3" style="background-color:#212529;">
+                                    <div class="card-body text-center carta2">
+                                        <div class="caja-top text-start">
+                                            <div class="perfil">
+                                                <div class="name-user">
+                                                    <strong class="text-start text-black">Usuario&nbsp; <small class="pensativo1 text-start">Hace menos de 1 minuto</small></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="comentarios_clientes text-start text-black">
+                                            <!-- CONSEGUIREMOS UN EFECTO DISTINTO CON ESTAS DOS CLASES NUEVAS INCORPORADAS -->
+                                            <div class="col-12 mb-1 fw-bold text-danger" id="alertas1">
+                                                Debes rellenar uno de los dos campos
+                                            </div>
+                                            <div class="mt-2">
+                                                <input type="email" placeholder="Correo Electrónico..." class="form-control" id="usu">
+                                            </div>
+                                            
+                                            <div id="texto1" class="mt-2">Block Mayúsculas Activo Cuidado</div>
+                                            <div class="p-3 mb-2">
+                                                <div class="text-center" style="height: 1em;border-bottom: #212529;">
+                                                    <span class="px-3">o</span>
+                                                </div>
+                                            </div>
+                                            <input type="number" placeholder="Numero de Teléfono..." class="form-control" id="telefono">
+                                            <div class="mt-2 text-end ms-auto">
+                                                <button name="enviar" type="submit" name="enviar" class="btn btn-warning text-center" onclick="enviar()">Enviar <i class="bi bi-send-x-fill"></i></button>
+                                            </div>
+                                            
+                                        </div>
+                                        <script>
+                                            var input = document.getElementById("usu");
+                                            var text = document.getElementById("texto1");
+                                            input.addEventListener("keyup", function(event) {
+    
+                                            if (event.getModifierState("CapsLock")) {
+                                                text.style.display = "block";
+                                            } else {
+                                                text.style.display = "none"
+                                            }
+                                            });
+    
+                                            function enviar(){
+                                                var a = document.getElementById("usu");
+                                                var b = document.getElementById("telefono");
+                                                if((a.value && b.value) == ""){
+                                                    document.getElementById("alertas1").style.display="block";
+                                                    document.getElementById("alertas").style.display="none";
+                                                }
+                                                if((a.value || b.value) != ""){
+                                                    document.getElementById("usu").value="";
+                                                    document.getElementById("telefono").value="";
+                                                    document.getElementById("alertas").style.display="block";
+                                                    document.getElementById("alertas1").style.display="none";
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+    
+                                <div class="card h-40 mx-auto mt-3" style="background-color:#212529;" id="alertas">
+                                    <div class="card-body text-center carta1">
+                                        <div class="caja-top text-start">
+                                            <div class="perfil">
+                                                <div class="perfil-img">
+                                                    <img src="img/avatar.png" alt="usuario2">
+                                                </div>
+                                                <div class="name-user">
+                                                    <strong class=" text-start text-black">Dafne Jimenez</strong>
+                                                    <small class="pensativo text-start">Ahora mismo</small>
+                                                </div>
+                                            </div>
+                                            <div class="reseñas">
+                                                <i class="fa fa-reply enviar"></i>
+                                                <i class="fa fa-heart corazon"></i>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="comentarios_clientes text-start text-black">
+                                            Perfecto, en breve nos pondremos en contacto contigo, muchas gracias por confiar en nosotros.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="container-fluid">
+                <div class="row mt-4 foot">
+                    <div class="col-9 mx-auto mt-2">
+                        <footer class="row mx-auto">
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Información</h4>
+                                <div class="pb-2 ps-1"><a href="https://es.wikipedia.org/wiki/Dark_(serie_de_televisi%C3%B3n)" target="_blank">Wikipedia</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.netflix.com/es/title/80100172" target="_blank">Página Oficial Netfilx</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.filmaffinity.com/es/film103430.html" target="_blank">Film Affinity</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.sensacine.com/series/serie-20328/" target="_blank">SensaCine</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 mx-auto">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Explicación</h4>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=6P3ZALooCd4" target="_blank">Temporadas</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=Jexrg8k9-vU" target="_blank">Análisis</a></div>
+                                <div class="pb-2 ps-1"><a href="https://www.youtube.com/watch?v=KWAQSU2rmAQ" target="_blank">Antes de todo</a></div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3 mx-auto ">
+                                <h4 class="pt-3 pb-3 texto ps-0 text-center"> Redes Sociales</h4>
+                                <div class="redes-sociales">
+                                    <div class="pb-0"><a href="https://www.facebook.com/netflixespana/" target="_blank" class="facebook"><i class="bi bi-facebook text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://twitter.com/netflix" target="_blank" class="twitter" class="twitter"><i class="bi bi-twitter text-white text-center mx-auto"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.instagram.com/netflixes/" target="_blank" class="instagram"><i class="bi bi-instagram text-white"></i></a></div>
+                                    <div class="pb-0"><a href="https://www.youtube.com/Netflix" target="_blank" class="gmail"><i class="bi bi-youtube text-white"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3 align-self-center mx-auto text-center">
+                                <a href="#" class="oler ms-5"><img src="img/prueba1.png" class="img-fluid mx-auto text-center" style="width:100%"></a>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="container-fluid">
+                        <footer class="row text-center foo2">
+                            <div class="col-12 pt-2 pb-4">
+                                <div>Dafne Jiménez López&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:dafne.jimenez.lopez@gmail.com">dafne.jimenez.lopez@gmail.com</a> </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+        <script src="JavaScript/funciones.js"></script>
+    </html>

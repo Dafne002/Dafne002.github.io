@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionales</title>
+    <link href="../estilo.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../img/prueba2.ico"/>
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            background-color: #212529;
+            color:white;
+        }
+      </style>
+</head>
+<body>
+
+  <div class="alert alert-info alert-dismissible alert-small fade show text-center fw-bold fs-5 mb-0">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <i class="bi bi-info-circle-fill"></i>&nbsp; PARA MÁS INFORMACIÓN PULSAR ENCIMA DEL NOMBRE DEL PERSONAJE.
+  </div> 
+
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top navegar">
+        <div class="container-fluid">
+
+            <!-- BOTON TOGGLER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ENLACES -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbar_plegable">
+                <div class=" d-block d-md-none">
+                  <ul class="navbar-nav menuNav ">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas1">Gustav</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna1">Heinrich</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#mikkel1">El Desconocido</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="d-none d-md-block">
+                  <ul class="navbar-nav menuNav ">
+                    <li class="navbar-item pe-1">
+                        <a href="../personajes.html" class="nav-link text-light fw-bold me-3 ms-3"><i class="bi bi-house "></i> Inicio</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#jonas">Gustav</a>
+                    </li>
+                    <li class="nav-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#hanna">Heinrich</a>
+                    </li>   
+                    <li class="navbar-item pe-1">
+                        <a class="nav-link text-light fw-bold me-3 ms-3" href="#mikkel">El Desconocido</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="parallaxGaus d-none d-md-block"><a name="jonas">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text3">Gustav Tannhaus</div></a>
+    </a></a>
+  </div>
+
+  <div class="parallaxGausM d-block d-md-none"><a name="jonas1">
+    <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="text3">Gustav Tannhaus</div></a>
+    </a></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>  
+
+  <div class="parallaxH d-none d-md-block"><a name="hanna">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHanna">
+      <div class="text3">Heinrich Tannhaus</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallaxHM d-block d-md-none"><a name="hanna1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHanna">
+      <div class="text3">Heinrich Tannhaus</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>  
+
+  <div class="parallax9 d-none d-md-block"><a name="mikkel">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMikel">
+      <div class="text3">El Desconocido</div></a>
+    </button></a>
+  </div>
+
+  <div class="parallax10 d-block d-md-none"><a name="mikkel1">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMikel">
+      <div class="text3">El Desconocido</div></a>
+    </button></a>
+  </div>
+
+  <div class="text-center">
+    <div id="main">
+      <a class="btn btn-dark" href="#"><i class="bi bi-arrow-up"></i> VOLVER ARRIBA <i class="bi bi-arrow-up"></i></a>  
+    </div>
+  </div>  
+
+    <!-- Ventana Modal Gustav -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Gustav</h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" mx-auto text-start" style="background-color:transparent;font-size:17px">
+                Es un antepasado del relojero de Winden. Vive en el siglo XIX y tienen una fábrica en el pueblo, asimismo fue uno de los primeros en formar parte de la organización "Sic Mundus". Gustav es ciego y tiene capacidades premonitorias.
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Heinreich-->
+  <div class="modal fade" id="modalHanna">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">Heinreich</h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" text-start" style="background-color:transparent;font-size:17px">
+                <p>
+                    Este personaje juega un papel importante en la tercera temporada. Después fabrica una máquina del tiempo, a petición de Claudia.
+                </p>
+                <p>
+                    Tannhaus pierde a su hijo, nuera y nieta en 1971. Pronto unas mujeres le entregan a una bebé, Charlotte, a la cual criará como su nieta.
+                </p>
+                <p>
+                    Finalmente, nos enteramos que Tannhaus creó un prototipo de máquina del tiempo y un error lo llevó a crear dos mundos. Lo hizo con el fin de evitar la muerte de su hijo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Ventana Modal Desconocido-->
+  <div class="modal fade" id="modalMikel">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h4 class="modal-title">El Desconocido </h4>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="font-size:1.4em"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class=" text-start" style="background-color:transparent;font-size:17px">
+                <p>
+                  Personaje interpretado por Claude Heinrich (niño), Jakob Diehl (adulto) y Hans Diehl (anciano) que aparece en la tercera temporada. Es hijo de Jonas y Martha, el nudo que conecta los dos mundos. Asimismo, es el padre de Tronte, al que concibió con Agnes en ambos mundos.
+                </p>
+                <p>
+                  Se desconoce su nombre y se dedica a mover las piezas justo donde tienen que estar para evitar que se repitan los ciclos cada 33 años. El hecho de que siempre aparezcan los 3 juntos podría representar el símbolo de la triqueta, ya que sus edades comprenden tres ciclos diferentes.
+                </p>
+                <p>
+                  Los desconocidos van al mundo de Eva y le entregan: los planos de la planta nuclear, el libro de Ariadna y un reloj con la inscripción “Para Charlotte”. También es el responsable del apocalipsis en ambos mundos ya que entra en la planta nuclear de 1986 y libera la partícula de Dios.
+                </p>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  </body>
+</html>
